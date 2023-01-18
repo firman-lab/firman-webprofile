@@ -11,10 +11,10 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
     const [isDark, setIsDark] = useState(false);
 
-    function setDark(){
-        if(isDark === false){
+    function setDark() {
+        if (isDark === false) {
             setIsDark(true);
-        }else{
+        } else {
             setIsDark(false);
         }
         console.log(isDark);
@@ -29,10 +29,10 @@ export default function Home() {
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <link rel="icon" href="/images/avatar.png" />
                 </Head>
-                <main className='w-full relative scroll-smooth dark:bg-slate-700 transition-all ease-in duration-300 snap-y snap-proximity overflow-y-scroll h-screen'>
-                    <Navbar dark={isDark} darkFunc={setDark}/>
-                    <Header/>
-                    <Footer/>
+                <main className='w-full relative dark:bg-slate-700 transition-all ease-in duration-300'>
+                    <Navbar dark={isDark} darkFunc={setDark} />
+                    <Header />
+                    <Footer />
                 </main>
             </div>
         </>
