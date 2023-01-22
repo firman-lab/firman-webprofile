@@ -32,9 +32,9 @@ export default function Header() {
                     </div>
                 </div>
             </section>
-            <section className='relative mx-auto w-full overflow-x-hidden py-6 lg:py-8 xl:py-16 hidden md:block lg:block xl:block'>
+            <section className='relative mx-auto w-full overflow-x-hidden py-6 lg:py-8 xl:py-0 hidden md:block lg:block xl:block'>
                 <div className='flex'>
-                    <div className='flex flex-row justify-between py-12 animate-marquee whitespace-nowrap bg-slate-600/50 w-full px-5 md:px-8 lg:px-16 xl:px-32'>
+                    <div className='flex flex-row justify-between py-12 animate-marquee whitespace-nowrap bg-gradient-to-t from-purple-800 to-indigo-800 dark:bg-gradient-to-t dark:from-slate-600 dark:to-slate-800 w-full px-5 md:px-8 lg:px-16 xl:px-32'>
                         <div className='flex flex-row items-center'>
                             <Image alt='ol' className='object-fill' width={42} height={42} src='/icons/react.svg' />
                             <div className='pl-2 text-white text-lg font-semibold'>React Js</div>
@@ -56,7 +56,7 @@ export default function Header() {
                             <div className='pl-2 text-white text-lg font-semibold'>Git</div>
                         </div>
                     </div>
-                    <div className='absolute flex flex-row justify-between py-12 animate-marquee2 whitespace-nowrap bg-slate-600/50 w-full px-5 md:px-8 lg:px-16 xl:px-32'>
+                    <div className='absolute flex flex-row justify-between py-12 animate-marquee2 whitespace-nowrap bg-gradient-to-t from-purple-800 to-indigo-800 dark:bg-gradient-to-t dark:from-slate-600 dark:to-slate-800 w-full px-5 md:px-8 lg:px-16 xl:px-32'>
                         <div className='flex flex-row items-center'>
                             <Image alt='ol' className='object-fill' width={42} height={42} src='/icons/react.svg' />
                             <div className='pl-2 text-white text-lg font-semibold'>React Js</div>
@@ -80,23 +80,7 @@ export default function Header() {
                     </div>
                 </div>
             </section>
-            <section className='container py-6 lg:py-8 xl:py-16 mx-auto'>
-                <div className='px-8'>
-                    <h3 className='text-4xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-800 dark:from-purple-100 dark:to-indigo-100'>Selected Project</h3>
-                    <p className='text-center font-medium pt-2 dark:text-indigo-200 md:mb-8 mb-4 mx-auto'>This is some of project that I have code for a few years. its online and you can check it when you need</p>
-                </div>
-                <div className='flex lg:flex-row flex-col gap-8 justify-evenly items-center px-4'>
-                    <div>
-                        <Image alt='img1' src={'/images/peeps.png'} className='object-fill rounded-xl hover:shadow-xl' width={400} height={400} />
-                    </div>
-                    <div>
-                        <Image alt='img1' src={'/images/peeps.png'} className='object-fill rounded-xl' width={400} height={400} />
-                    </div>
-                    <div>
-                        <Image alt='img1' src={'/images/peeps.png'} className='object-fill rounded-xl' width={400} height={400} />
-                    </div>
-                </div>
-            </section>
+
         </>
     );
 }

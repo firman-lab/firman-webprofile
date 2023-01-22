@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const menu = [
     { name: 'Project', href: '/' },
-    { name: 'Blog', href: '/' },
+    { name: 'Blog', href: '/articles' },
     { name: 'Contact', href: '/' },
 ];
 
