@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Next13 from '../components/Blog/Next13';
 
 
 export default function Articles() {
@@ -26,9 +27,9 @@ export default function Articles() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/images/avatar.png" />
             </Head>
-            <main className='w-full relative dark:bg-slate-700 transition-all ease-in duration-300'>
+            <main className='w-full relative dark:bg-slate-900 transition-all ease-in duration-300'>
                 <Navbar dark={isDark} darkFunc={setDark} />
-
+                <Next13/>
                 <Footer />
             </main>
         </div>

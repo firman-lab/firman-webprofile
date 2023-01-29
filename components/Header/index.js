@@ -5,15 +5,17 @@ export default function Header() {
     return (
         <>
             <section className='container mx-auto px-8 pt-36'>
-                <div className='flex flex-col-reverse lg:flex-row items-center justify-between'>
-                    <div className=' flex-1'>
+                <div className='flex flex-col-reverse lg:flex-row gap-8 items-center justify-between'>
+                    <div className='flex-1'>
                         <h3 className=' pt-8 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 to-purple-600 dark:bg-gradient-to-br dark:from-indigo-400 dark:to-purple-200'>Hi, I&apos;m Firman Hidayat</h3>
                         <h3 className='text-4xl xl:text-6xl pt-2 font-bold text-transparent bg-clip-text bg-indigo-800 dark:bg-purple-100'>Front End Developer</h3>
                         <p className='font-medium lg:text-lg pt-6 dark:text-indigo-300'>
                             I&apos;ve experienced in building website with React Js, expecially with Next Js Framework, Express Js for Backend, and RDMBS like Postgree SQL or MySQL. I&apos;m Available for Remote Job, if you need someone to help your website better, let&apos;s talk over the chat!
                         </p>
                         <div className='flex flex-wrap justify-left gap-4 lg:gap-8 items-center mt-8'>
-                            <button className='px-6 py-2 rounded-lg bg-gradient-to-tr from-purple-700 to-indigo-700 text-white font-semibold  hover:bg-gradient-to-tr hover:from-purple-600 hover:to-indigo-600 hover:scale-110 hover:transition-all hover:duration-200'>Resume</button>
+                            <a href='/Firman Hidayat-resume-3.pdf' download={true} target='_blank' rel="noopener noreferrer">
+                                <button className='px-6 py-2 rounded-lg bg-gradient-to-tr from-purple-700 to-indigo-700 text-white font-semibold  hover:bg-gradient-to-tr hover:from-purple-600 hover:to-indigo-600 hover:scale-110 hover:transition-all hover:duration-200'>Get Resume</button>
+                            </a>
                             <button className='bg-indigo-700 dark:hover:bg-indigo-300 hover:p-2 p-1 rounded-md hover:transition-all hover:ease-in hover:duration-150 '>
                                 <Image src='/icons/ig.svg' alt='ic-ig' width={24} height={18} />
                             </button>
@@ -25,7 +27,7 @@ export default function Header() {
                             </button>
                         </div>
                     </div>
-                    <div className='flex-1 flex justify-center items-center'>
+                    <div className='flex-1'>
                         <div className='bg-purple-300/20 shadow-2xl shadow-purple-300/30 rounded-full'>
                             <Image src='/images/avatar.png' alt='avatar-head' width={600} height={600} className='drop-shadow-2xl object-cover' />
                         </div>

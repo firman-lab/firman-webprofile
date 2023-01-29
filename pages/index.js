@@ -30,7 +30,7 @@ export default function Home() {
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <link rel="icon" href="/images/avatar.png" />
                 </Head>
-                <main className='w-full relative dark:bg-slate-800 transition-all ease-in duration-300'>
+                <main className='w-full relative dark:bg-slate-900 transition-all ease-in duration-300'>
                     <Navbar dark={isDark} darkFunc={setDark} />
                     <Header />
                     <Portfolio />
