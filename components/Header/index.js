@@ -36,7 +36,7 @@ export default function Header() {
             </section>
             <section className='relative mx-auto w-full overflow-x-hidden py-6 lg:py-8 xl:py-0 hidden md:block lg:block xl:block'>
                 <div className='flex'>
-                    <div className='flex flex-row justify-between py-12 animate-marquee whitespace-nowrap bg-gradient-to-t from-purple-800 to-indigo-800 dark:bg-gradient-to-t dark:from-slate-600 dark:to-slate-800 w-full px-5 md:px-8 lg:px-16 xl:px-32'>
+                    <div className='flex flex-row justify-between py-12 animate-marquee whitespace-nowrap bg-gradient-to-t from-purple-800 to-indigo-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-900 w-full px-5 md:px-8 lg:px-16 xl:px-32'>
                         <div className='flex flex-row items-center'>
                             <Image alt='ol' className='object-fill' width={42} height={42} src='/icons/react.svg' />
                             <div className='pl-2 text-white text-lg font-semibold'>React Js</div>
@@ -58,7 +58,7 @@ export default function Header() {
                             <div className='pl-2 text-white text-lg font-semibold'>Git</div>
                         </div>
                     </div>
-                    <div className='absolute flex flex-row justify-between py-12 animate-marquee2 whitespace-nowrap bg-gradient-to-t from-purple-800 to-indigo-800 dark:bg-gradient-to-t dark:from-slate-600 dark:to-slate-800 w-full px-5 md:px-8 lg:px-16 xl:px-32'>
+                    <div className='absolute flex flex-row justify-between py-12 animate-marquee2 whitespace-nowrap bg-gradient-to-t from-purple-800 to-indigo-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-900 w-full px-5 md:px-8 lg:px-16 xl:px-32'>
                         <div className='flex flex-row items-center'>
                             <Image alt='ol' className='object-fill' width={42} height={42} src='/icons/react.svg' />
                             <div className='pl-2 text-white text-lg font-semibold'>React Js</div>
