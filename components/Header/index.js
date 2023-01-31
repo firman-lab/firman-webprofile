@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 export default function Header() {
@@ -16,15 +17,21 @@ export default function Header() {
                             <a href='/Firman Hidayat-resume-3.pdf' download={true} target='_blank' rel="noopener noreferrer">
                                 <button className='px-6 py-2 rounded-lg bg-gradient-to-tr from-purple-700 to-indigo-700 text-white font-semibold  hover:bg-gradient-to-tr hover:from-purple-600 hover:to-indigo-600 hover:scale-110 hover:transition-all hover:duration-200'>Get Resume</button>
                             </a>
-                            <button className='bg-indigo-700 dark:hover:bg-indigo-300 hover:p-2 p-1 rounded-md hover:transition-all hover:ease-in hover:duration-150 '>
-                                <Image src='/icons/ig.svg' alt='ic-ig' width={24} height={18} />
-                            </button>
-                            <button className='bg-indigo-700 dark:hover:bg-indigo-300 hover:p-2 p-1 rounded-md hover:transition-all hover:ease-in hover:duration-150'>
-                                <Image src='/icons/linkind.svg' alt='ic-ig' width={24} height={18} />
-                            </button>
-                            <button className='bg-indigo-700 dark:hover:bg-indigo-300 hover:p-2 p-1 rounded-md hover:transition-all hover:ease-in hover:duration-150'>
-                                <Image src='/icons/git.svg' alt='ic-ig' width={24} height={18} />
-                            </button>
+                            <Link href={'https://www.instagram.com/fir_manh/'} target="_blank">
+                                <button className='bg-indigo-700 dark:hover:bg-indigo-300 hover:p-2 p-1 rounded-md hover:transition-all hover:ease-in hover:duration-150 '>
+                                    <Image src='/icons/ig.svg' alt='instagram' width={24} height={18} />
+                                </button>
+                            </Link>
+                            <Link href={'https://www.linkedin.com/in/fhidayat400/'} target="_blank">
+                                <button className='bg-indigo-700 dark:hover:bg-indigo-300 hover:p-2 p-1 rounded-md hover:transition-all hover:ease-in hover:duration-150'>
+                                    <Image src='/icons/linkind.svg' alt='ic-ig' width={24} height={18} />
+                                </button>
+                            </Link>
+                            <Link href={'https://github.com/firman-lab'} target="_blank">
+                                <button className='bg-indigo-700 dark:hover:bg-indigo-300 hover:p-2 p-1 rounded-md hover:transition-all hover:ease-in hover:duration-150'>
+                                    <Image src='/icons/git.svg' alt='ic-ig' width={24} height={18} />
+                                </button>
+                            </Link>
                         </div>
                     </div>
                     <div className='flex-1'>
@@ -86,3 +93,4 @@ export default function Header() {
         </>
     );
 }
+    

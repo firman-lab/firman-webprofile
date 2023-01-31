@@ -21,9 +21,9 @@ export default function Navbar({ dark, darkFunc }) {
     }
 
     return (
-        <section className='fixed w-full z-10 px-8 md:px-12 dark:bg-slate-800/80 backdrop-blur-md dark:transition dark:ease-in dark:duration-200'>
+        <section className='fixed w-full z-10 px-8 md:px-12 dark:bg-slate-900/80 bg-white/80 backdrop-blur-md dark:transition dark:ease-in dark:duration-200'>
             <div className='flex justify-between items-center'>
-                <div className='w-24 h-16 md:w-32 md:h-24 relative'>
+                <div className='w-24 h-8 py-8 md:w-32 relative'>
                     <Image
                         src='/icons/main.svg'
                         alt="ic-main"
@@ -46,7 +46,7 @@ export default function Navbar({ dark, darkFunc }) {
                             (<Image src='/icons/moon.svg' width={24} height={24} alt='ic-sun' />)}
                     </button>
                     <button className='px-3 py-2 rounded-lg bg-gradient-to-tr from-purple-700 to-indigo-700 text-white text-sm font-semibold md:mx-4 m-2 hover:bg-gradient-to-tr hover:from-purple-600 hover:to-indigo-600 hover:scale-110 hover:transition-all hover:duration-200'>
-                        Email me!
+                        Mail me!
                     </button>
                 </div>
                 <div className='md:hidden'>

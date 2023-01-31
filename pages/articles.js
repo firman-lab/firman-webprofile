@@ -33,9 +33,9 @@ export default function Articles() {
                         <section className='col-span-10 col-start-2'>
                             <div className='relative flex flex-col-reverse lg:flex-row justify-between gap-6 lg:gap-12'>
                                 <div className='w-full lg:w-7/12'>
-                                    <div className='font-bold max-w-xl text-xl lg:text-5xl tracking-tight leading-none dark:text-white'>
+                                    <a className='font-bold max-w-xl text-xl lg:text-5xl tracking-tight leading-none dark:text-white' href='#'>
                                         <h1>Bootstrap Sudah Mendukung Color Modes</h1>
-                                    </div>
+                                    </a>
                                     <div className='md:block hidden'>
                                         <div className='text-slate-500 dark:text-slate-400 mt-2 md:text-lg'>
                     Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes, karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
@@ -76,9 +76,9 @@ export default function Articles() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='w-full lg:w-5/12 shrink-0'>
+                                <a className='w-full lg:w-5/12 shrink-0' href='#'>
                                     <Image alt='img-article' src={'/images/blog-1.webp'} width={300} height={100} className='w-full rounded-lg sm:max-w-full' />
-                                </div>
+                                </a>
                             </div>
                         </section>
                     </div>

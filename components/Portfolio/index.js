@@ -11,13 +11,13 @@ export default function Portfolio() {
             </div>
             <div className='flex lg:flex-row flex-col gap-12 justify-evenly items-center px-4 pt-8'>
                 <div>
-                    <Image alt='img1' src={'/images/pf1.png'} className='object-fill rounded-xl scale-100 hover:scale-110 ease-in-out duration-200' width={400} height={400} />
+                    <Image alt='img1' src={'/images/pf1.png'} className='object-fill rounded-xl scale-100 shadow-lg hover:scale-110 ease-in-out duration-200' width={400} height={400} />
                 </div>
                 <div>
-                    <Image alt='img1' src={'/images/pf2.png'} className='object-fill rounded-xl scale-100 hover:scale-110 ease-in-out duration-200' width={400} height={400} />
+                    <Image alt='img1' src={'/images/pf2.png'} className='object-fill rounded-xl scale-100 shadow-lg hover:scale-110 ease-in-out duration-200' width={400} height={400} />
                 </div>
                 <div>
-                    <Image alt='img1' src={'/images/peeps.png'} className='object-fill rounded-xl scale-100 hover:scale-110 ease-in-out duration-200' width={400} height={400} />
+                    <Image alt='img1' src={'/images/pf3.png'} className='object-fill rounded-xl scale-100 shadow-lg hover:scale-110 ease-in-out duration-200' width={400} height={400} />
                 </div>
             </div>
         </section>);
