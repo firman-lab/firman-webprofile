@@ -36,7 +36,8 @@ export default function Header() {
                     </div>
                     <div className='flex-1'>
                         <div className='bg-purple-300/20 shadow-2xl shadow-purple-300/30 rounded-full'>
-                            <Image src='/images/avatar.png' alt='avatar-head' width={600} height={600} className='drop-shadow-2xl object-cover' />
+                            {/* <Image src='/images/avatar.png' alt='avatar-head' width={600} height={600} className='drop-shadow-2xl object-cover' /> */}
+                            <img src='/images/avatar.png' alt='image avatar' className='drop-shadow-2xl object-cover' />
                         </div>
                     </div>
                 </div>
@@ -93,4 +94,3 @@ export default function Header() {
         </>
     );
 }
-    

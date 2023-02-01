@@ -2,14 +2,15 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 
 const menu = [
-    { name: 'Project', href: '/' },
-    { name: 'Blog', href: '/articles' },
-    { name: 'Contact', href: '/' },
+    { name: 'Project', href: '/', active: true },
+    { name: 'Blog', href: '/articles', active: false },
+    { name: 'Contact', href: '/', active: false },
 ];
 
 export default function Navbar({ dark, darkFunc }) {
 
     const [open, setOpen] = useState(false);
+    // const [active, setActive] = useState('project');
 
     function setPop() {
         if (!open) {
@@ -66,8 +67,6 @@ export default function Navbar({ dark, darkFunc }) {
                             <a href={item.href} key={index} className='pt-2 lg:px-8 font-semibold dark:text-slate-300 hover:text-purple-700 dark:hover:text-white hover:transition-all hover:ease-in hover:duration-200'>{item.name}</a>
                         ))}
                     </div>
-                    {/* </div> */}
-                    {/* <div className='flex items-center justify-between'> */}
                     <div className='py-4'>
                         <button className='p-1 rounded-lg bg-purple-800' onClick={darkFunc}>
                             {dark ?
@@ -76,9 +75,6 @@ export default function Navbar({ dark, darkFunc }) {
                                 (<Image src='/icons/moon.svg' width={24} height={24} alt='ic-sun' />)}
                         </button>
                     </div>
-                    {/* <button className='mx-8 px-3 py-2 bg-purple-800 text-white rounded-md'>
-                      Email me!
-                    </button> */}
                 </div>
             </div>
         </section>
