@@ -20,6 +20,7 @@ module.exports = {
                     '100%': { transform: 'translateX(0%)' },
                 },
             },
+            display: ['group-hover'],
         },
     },
     darkMode: 'class',
