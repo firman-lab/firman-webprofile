@@ -29,7 +29,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </a>
-                <a href='#'>
+                <a href='https://fist-beta.netlify.app' target={'_blank'} rel='noreferrer'>
                     <div className='relative overflow-hidden rounded-xl scale-100 shadow-lg hover:scale-105 ease-in-out duration-200 group'>
                         <Image alt='Tax Consultant for classificate a journal report' src={'/images/pf2.png'} className='object-fill' width={350} height={350} />
                         <div className='w-full absolute bottom-0 left-0 pt-10 pb-3 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300'>
@@ -48,7 +48,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </a>
-                <a href='#'>
+                <a href='https://data-converter.netlify.app' target={'_blank'} rel='noreferrer'>
                     <div className='relative overflow-hidden rounded-xl scale-100 shadow-lg hover:scale-105 ease-in-out duration-200 group'>
                         <Image alt='convert finance report a company to international standart accounting report' src={'/images/pf3.png'} className='object-fill' width={350} height={350} />
                         <div className='w-full absolute bottom-0 left-0 pt-10 pb-3 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300'>
