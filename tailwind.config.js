@@ -6,6 +6,10 @@ module.exports = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                'signika': ['Signika', 'sans-serif'],
+                'poppins': ['Poppins', 'sans-serif'],
+            },
             animation: {
                 marquee: 'marquee 20s linear infinite',
                 marquee2: 'marquee2 20s linear infinite',

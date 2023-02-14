@@ -8,9 +8,9 @@ export default function Header() {
             <section className='container mx-auto px-8 pt-36'>
                 <div className='flex flex-col-reverse lg:flex-row gap-8 items-center justify-between'>
                     <div className='flex-1'>
-                        <h3 className=' pt-8 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 to-purple-600 dark:bg-gradient-to-br dark:from-indigo-400 dark:to-purple-200'>Hi, I&apos;m Firman Hidayat</h3>
-                        <h3 className='text-4xl xl:text-6xl pt-2 font-bold text-transparent bg-clip-text bg-indigo-800 dark:bg-purple-100'>Front End Developer</h3>
-                        <p className='font-medium lg:text-lg pt-6 dark:text-indigo-300'>
+                        <h3 className=' pt-8 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 to-purple-600 dark:bg-gradient-to-br dark:from-indigo-400 dark:to-purple-200 font-signika'>Hi, I&apos;m Firman Hidayat</h3>
+                        <h3 className='text-4xl xl:text-6xl pt-2 font-bold text-transparent bg-clip-text bg-indigo-800 dark:bg-purple-100 font-signika'>Front End Developer</h3>
+                        <p className='font-medium text-slate-600 lg:text-lg pt-6 dark:text-indigo-300 font-poppins'>
                             I&apos;ve experienced in building website with React Js, expecially with Next Js Framework, Express Js for Backend, and RDMBS like Postgree SQL or MySQL. I&apos;m Available for Remote Job, if you need someone to help your website better, let&apos;s talk over the chat!
                         </p>
                         <div className='flex flex-wrap justify-left gap-4 lg:gap-8 items-center mt-8'>
