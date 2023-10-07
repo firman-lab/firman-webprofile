@@ -6,8 +6,8 @@ export default function Portfolio() {
         <section className='container py-8 lg:py-12 xl:py-16 mx-auto mb-8'>
             <hr className='pb-8 mx-8 md:hidden'></hr>
             <div className='px-8'>
-                <h3 className='text-4xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-800 dark:from-purple-100 dark:to-indigo-100'>Selected Project</h3>
-                <p className='text-center font-medium pt-2 dark:text-indigo-200 md:mb-8 mb-4 mx-auto'>This is some of project that I have code for a few years. its online and you can check it when you need</p>
+                <h3 className='text-xl lg:text-3xl xl:text-4xl text-center font-bold text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-[#29af77] dark:to-[#53e0a1] bg-[#26a76d] drop-shadow-md !leading-normal'>Selected Project</h3>
+                <p className='text-sm lg:text-base xl:text-lg text-center font-medium pt-2 text-gray-500 dark:text-gray-300 md:mb-8 mb-4 mx-auto font-poppins'>This is some of project that I have code for a few years. it's online and you can check it when you want.</p>
             </div>
             <div className='flex flex-wrap gap-8 justify-around items-center px-4 pt-8'>
                 <a href='#'>
@@ -21,7 +21,7 @@ export default function Portfolio() {
                                 </div>
                                 <div className='pr-0'>
                                     <div className='text-xs bg-purple-800 text-white rounded-tl-lg rounded-bl-lg  px-2 py-1'>
-                                    Amikom Yogyakarta
+                                        Amikom Yogyakarta
                                     </div>
                                 </div>
 
@@ -40,7 +40,7 @@ export default function Portfolio() {
                                 </div>
                                 <div className='pr-0'>
                                     <div className='text-xs bg-purple-800 text-white rounded-tl-lg rounded-bl-lg  px-2 py-1'>
-                                    Self Project
+                                        Self Project
                                     </div>
                                 </div>
 
@@ -59,7 +59,7 @@ export default function Portfolio() {
                                 </div>
                                 <div className='pr-0'>
                                     <div className='text-xs bg-purple-800 text-white rounded-tl-lg rounded-bl-lg  px-2 py-1'>
-                                    Kemenhan (Prototype)
+                                        Kemenhan (Prototype)
                                     </div>
                                 </div>
                             </div>

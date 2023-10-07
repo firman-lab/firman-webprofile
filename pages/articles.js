@@ -38,7 +38,7 @@ export default function Articles() {
                                     </a>
                                     <div className='md:block hidden'>
                                         <div className='text-slate-500 dark:text-slate-400 mt-2 md:text-lg'>
-                    Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes, karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
+                                            Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes, karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
                                         </div>
                                     </div>
                                     <div className='text-xs tracking-tighter sm:text-sm mt-4'>
@@ -51,7 +51,7 @@ export default function Articles() {
                                                     <path d="M12 7v5l3 3"></path><path d="M4 12h1"></path>
                                                     <path d="M19 12h1"></path><path d="M12 19v1"></path>
                                                 </svg>
-                      4 min read
+                                                4 min read
                                             </p>
                                             <p>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-calendar" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -63,7 +63,7 @@ export default function Articles() {
                                                     <line x1="11" y1="15" x2="12" y2="15"></line>
                                                     <line x1="12" y1="15" x2="12" y2="18"></line>
                                                 </svg>
-                      Published on 25 Jan
+                                                Published on 25 Jan
                                             </p>
                                             <p>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -71,7 +71,7 @@ export default function Articles() {
                                                     <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
                                                     <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
                                                 </svg>
-                      Ditulis oleh : Irsyad A. P
+                                                Ditulis oleh : Irsyad A. P
                                             </p>
                                         </div>
                                     </div>
@@ -106,15 +106,15 @@ export default function Articles() {
                                 <li className='overflow-hidden flex flex-col relative h-full'>
                                     <a className='flex-1' href='#'>
                                         <div className=''>
-                                            <Image src={'/images/blog-1.webp'} height={600} width={600} className='object-cover object-center' alt='banner-blog1'/>
+                                            <Image src={'/images/blog-1.webp'} height={600} width={600} className='object-cover object-center' alt='banner-blog1' />
                                             <div className='mt-2.5 lg:mt-3.5 flex gap-x-2 md:gap-x-3 text-xs md:text-sm flex-wrap items-center [&>div]:text-indigo-600 [&>div]:hover:text-indigo-700 '>
                                                 <div>Bootstrap</div>
                                                 <div>Realeased</div>
                                             </div>
                                             <div className='mt-2.5 text-slate-800 dark:text-slate-200 max-w-sm leading-tight font-medium lg:mt-3.5 text-base'>Bootstrap Dark Mode Telah Rilis</div>
                                             <div className='text-slate-500 dark:text-slate-400 leading-relaxed mt-2.5 lg:mt-3.5 text-sm md:line-clamp-3'>
-                                        Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes, 
-                                        karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
+                                                Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes,
+                                                karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
                                             </div>
                                         </div>
                                     </a>
@@ -122,15 +122,15 @@ export default function Articles() {
                                 <li className='overflow-hidden flex flex-col relative h-full'>
                                     <a className='flex-1' href='#'>
                                         <div className=''>
-                                            <Image src={'/images/blog-1.webp'} height={600} width={600} className='object-cover object-center' alt='banner-blog1'/>
+                                            <Image src={'/images/blog-1.webp'} height={600} width={600} className='object-cover object-center' alt='banner-blog1' />
                                             <div className='mt-2.5 lg:mt-3.5 flex gap-x-2 md:gap-x-3 text-xs md:text-sm flex-wrap items-center [&>div]:text-indigo-600 [&>div]:hover:text-indigo-700 '>
                                                 <div>Bootstrap</div>
                                                 <div>Realeased</div>
                                             </div>
                                             <div className='mt-2.5 text-slate-800 dark:text-slate-200 max-w-sm leading-tight font-medium lg:mt-3.5 text-base'>Bootstrap Dark Mode Telah Rilis</div>
                                             <div className='text-slate-500 dark:text-slate-400 leading-relaxed mt-2.5 lg:mt-3.5 text-sm md:line-clamp-3'>
-                                        Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes, 
-                                        karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
+                                                Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes,
+                                                karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
                                             </div>
                                         </div>
                                     </a>
@@ -138,15 +138,15 @@ export default function Articles() {
                                 <li className='overflow-hidden flex flex-col relative h-full'>
                                     <a className='flex-1' href='#'>
                                         <div className=''>
-                                            <Image src={'/images/blog-1.webp'} height={600} width={600} className='object-cover object-center' alt='banner-blog1'/>
+                                            <Image src={'/images/blog-1.webp'} height={600} width={600} className='object-cover object-center' alt='banner-blog1' />
                                             <div className='mt-2.5 lg:mt-3.5 flex gap-x-2 md:gap-x-3 text-xs md:text-sm flex-wrap items-center [&>div]:text-indigo-600 [&>div]:hover:text-indigo-700 '>
                                                 <div>Bootstrap</div>
                                                 <div>Realeased</div>
                                             </div>
                                             <div className='mt-2.5 text-slate-800 dark:text-slate-200 max-w-sm leading-tight font-medium lg:mt-3.5 text-base'>Bootstrap Dark Mode Telah Rilis</div>
                                             <div className='text-slate-500 dark:text-slate-400 leading-relaxed mt-2.5 lg:mt-3.5 text-sm md:line-clamp-3'>
-                                        Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes, 
-                                        karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
+                                                Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes,
+                                                karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
                                             </div>
                                         </div>
                                     </a>
@@ -154,15 +154,15 @@ export default function Articles() {
                                 <li className='overflow-hidden flex flex-col relative h-full'>
                                     <a className='flex-1' href='#'>
                                         <div className=''>
-                                            <Image src={'/images/blog-1.webp'} height={600} width={600} className='object-cover object-center' alt='banner-blog1'/>
+                                            <Image src={'/images/blog-1.webp'} height={600} width={600} className='object-cover object-center' alt='banner-blog1' />
                                             <div className='mt-2.5 lg:mt-3.5 flex gap-x-2 md:gap-x-3 text-xs md:text-sm flex-wrap items-center [&>div]:text-indigo-600 [&>div]:hover:text-indigo-700 '>
                                                 <div>Bootstrap</div>
                                                 <div>Realeased</div>
                                             </div>
                                             <div className='mt-2.5 text-slate-800 dark:text-slate-200 max-w-sm leading-tight font-medium lg:mt-3.5 text-base'>Bootstrap Dark Mode Telah Rilis</div>
                                             <div className='text-slate-500 dark:text-slate-400 leading-relaxed mt-2.5 lg:mt-3.5 text-sm md:line-clamp-3'>
-                                        Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes, 
-                                        karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
+                                                Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes,
+                                                karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
                                             </div>
                                         </div>
                                     </a>
@@ -170,15 +170,15 @@ export default function Articles() {
                                 <li className='overflow-hidden flex flex-col relative h-full'>
                                     <a className='flex-1' href='#'>
                                         <div className=''>
-                                            <Image src={'/images/blog-1.webp'} height={600} width={600} className='object-cover object-center' alt='banner-blog1'/>
+                                            <Image src={'/images/blog-1.webp'} height={600} width={600} className='object-cover object-center' alt='banner-blog1' />
                                             <div className='mt-2.5 lg:mt-3.5 flex gap-x-2 md:gap-x-3 text-xs md:text-sm flex-wrap items-center [&>div]:text-indigo-600 [&>div]:hover:text-indigo-700 '>
                                                 <div>Bootstrap</div>
                                                 <div>Realeased</div>
                                             </div>
                                             <div className='mt-2.5 text-slate-800 dark:text-slate-200 max-w-sm leading-tight font-medium lg:mt-3.5 text-base'>Bootstrap Dark Mode Telah Rilis</div>
                                             <div className='text-slate-500 dark:text-slate-400 leading-relaxed mt-2.5 lg:mt-3.5 text-sm md:line-clamp-3'>
-                                        Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes, 
-                                        karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
+                                                Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes,
+                                                karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
                                             </div>
                                         </div>
                                     </a>
@@ -186,15 +186,15 @@ export default function Articles() {
                                 <li className='overflow-hidden flex flex-col relative h-full'>
                                     <a className='flex-1' href='#'>
                                         <div className=''>
-                                            <Image src={'/images/blog-1.webp'} height={600} width={600} className='object-cover object-center' alt='banner-blog1'/>
+                                            <Image src={'/images/blog-1.webp'} height={600} width={600} className='object-cover object-center' alt='banner-blog1' />
                                             <div className='mt-2.5 lg:mt-3.5 flex gap-x-2 md:gap-x-3 text-xs md:text-sm flex-wrap items-center [&>div]:text-indigo-600 [&>div]:hover:text-indigo-700 '>
                                                 <div>Bootstrap</div>
                                                 <div>Realeased</div>
                                             </div>
                                             <div className='mt-2.5 text-slate-800 dark:text-slate-200 max-w-sm leading-tight font-medium lg:mt-3.5 text-base'>Bootstrap Dark Mode Telah Rilis</div>
                                             <div className='text-slate-500 dark:text-slate-400 leading-relaxed mt-2.5 lg:mt-3.5 text-sm md:line-clamp-3'>
-                                        Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes, 
-                                        karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
+                                                Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes,
+                                                karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
                                             </div>
                                         </div>
                                     </a>
@@ -202,15 +202,15 @@ export default function Articles() {
                                 <li className='overflow-hidden flex flex-col relative h-full'>
                                     <a className='flex-1' href='#'>
                                         <div className=''>
-                                            <Image src={'/images/blog-1.webp'} height={600} width={600} className='object-cover object-center' alt='banner-blog1'/>
+                                            <Image src={'/images/blog-1.webp'} height={600} width={600} className='object-cover object-center' alt='banner-blog1' />
                                             <div className='mt-2.5 lg:mt-3.5 flex gap-x-2 md:gap-x-3 text-xs md:text-sm flex-wrap items-center [&>div]:text-indigo-600 [&>div]:hover:text-indigo-700 '>
                                                 <div>Bootstrap</div>
                                                 <div>Realeased</div>
                                             </div>
                                             <div className='mt-2.5 text-slate-800 dark:text-slate-200 max-w-sm leading-tight font-medium lg:mt-3.5 text-base'>Bootstrap Dark Mode Telah Rilis</div>
                                             <div className='text-slate-500 dark:text-slate-400 leading-relaxed mt-2.5 lg:mt-3.5 text-sm md:line-clamp-3'>
-                                        Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes, 
-                                        karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
+                                                Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes,
+                                                karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
                                             </div>
                                         </div>
                                     </a>

@@ -3,13 +3,13 @@ import React from 'react';
 
 export default function footer() {
     return (
-        <footer className='py-6 lg:py-8 xl:pt-16 bg-gradient-to-tr from-indigo-900 to-purple-800 dark:bg-gradient-to-b dark:from-slate-800 dark:to-slate-900'>
+        <footer className='py-6 lg:py-4 xl:pt-16 bg-gradient-to-b  from-[#34996b] to-[#0c683d] dark:bg-gradient-to-b dark:from-slate-900 dark:to-[#2a554249]'>
             <div className='max-w-screen-2xl grid grid-cols-12 mx-auto'>
                 <div className='col-span-10 col-start-2 text-white py-4'>
                     <div className='grid gap-x-0 gap-y-10 sm:grid-cols-12 lg:gap-x-10'>
                         <div className='col-span-full sm:col-span-6 lg:col-span-4'>
                             <h3 className='mb-4 font-bold uppercase'>Skill</h3>
-                            <div className='space-y-2 md:space-y-4 text-sm'>
+                            <div className='space-y-2 md:space-y-4 text-xs lg:text-sm font-medium font-poppins'>
                                 <div className='flex justify-start items-center gap-1'>
                                     <Image alt='ic-react' src={'/icons/react.svg'} width={24} height={24} />
                                     <span>React Js</span>
@@ -34,7 +34,7 @@ export default function footer() {
                         </div>
                         <div className='col-span-full sm:col-span-6 lg:col-span-4'>
                             <h3 className='mb-4 font-bold uppercase'>Media</h3>
-                            <div className='space-y-2 md:space-y-4 text-sm'>
+                            <div className='space-y-2 md:space-y-4 text-xs lg:text-sm font-medium font-poppins'>
                                 <a className=' flex justify-start items-center gap-1' href='#'>
                                     <Image alt='ic-ig' className='object-contain' width={24} height={24} src='/icons/ig.svg' />
                                     <span>Instagram</span>
@@ -51,7 +51,7 @@ export default function footer() {
                         </div>
                         <div className='col-span-full sm:col-span-6 lg:col-span-4 text-sm'>
                             <h3 className='mb-4 font-bold uppercase'>Contact</h3>
-                            <div className='space-y-2 md:space-y-4'>
+                            <div className='space-y-2 md:space-y-4 text-xs lg:text-sm font-medium font-poppins'>
                                 <a className='flex justify-start items-center gap-1' href='#'>
                                     <Image alt='ic-ig' className='object-contain' width={24} height={24} src='/icons/mail.svg' />
                                     <span>fhidayat400@gmail.com</span>
@@ -65,8 +65,8 @@ export default function footer() {
                     </div>
                 </div>
             </div>
-            <div className='mt-8 mx-8 pt-8 border-t border-purple-200/60 dark:border-slate-600/60 text-center text-xs text-white flex flex-row justify-center items-center '>
-                <p className='font-semibold py-2 my-auto'>Copyright 2023 Firman.
+            <div className='mt-4 mx-8 pt-4 border-t border-purple-200/60 dark:border-slate-600/60 text-center text-xs font-light font-poppins text-white flex flex-row justify-center items-center '>
+                <p className='font-medium py-2 my-auto'>Copyright 2023 SoonPro.
 
                 </p>
                 <span className='text-white'>&nbsp;All right reserved</span>
