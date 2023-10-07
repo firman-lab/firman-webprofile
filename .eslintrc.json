@@ -6,6 +6,8 @@
     // "no-else-return": 1,
     "semi": [1, "always"],
     "space-unary-ops": 2,
-    "quotes": [2, "single", { "avoidEscape": true }]
+    "quotes": [1, "single", { "avoidEscape": true }],
+    "singleQuote": false,
+    "printWidth": 120
   }
 }
