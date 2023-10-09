@@ -31,7 +31,7 @@ export default function Header() {
                                 }}
                             />
                         </h3>
-                        <p className='font-medium text-slate-600 dark:text-gray-300 text-sm lg:text-base xl:text-lg pt-2 lg:pt-4  font-poppins'>
+                        <p className='font-medium text-slate-600 dark:text-gray-300 text-sm max-w-2xl text-justify lg:text-base xl:text-lg pt-2 lg:pt-4 font-poppins'>
                             I&apos;ve experience website development with React Js, expecially with Next Js Framework, Express Js for Backend, and Sql or NoSql Database. I&apos;m willing to collaborate with you, if you need someone to help your website better, let&apos;s talk over the chat!
                         </p>
                         <div className='flex flex-wrap justify-left gap-4 lg:gap-8 items-center mt-8'>
