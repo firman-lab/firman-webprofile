@@ -16,7 +16,7 @@ export default function Header() {
                         <h3 className=' pt-1 lg:pt-8 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 to-emerald-300 dark:bg-gradient-to-br dark:from-gray-100 dark:text-gray-200 font-signika'>Hi, I&apos;m Firman</h3>
                         {/* <h3 className='text-3xl lg:text-4xl xl:text-6xl pt-2 font-bold text-transparent bg-clip-text bg-[#29af77] drop-shadow-md dark:bg-[#80ddb3] font-signika'>Front End Developer</h3> */}
 
-                        <h3 className='text-3xl lg:text-4xl xl:text-6xl !leading-tight pt-2 font-bold text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-[#29af77] dark:to-[#b0fa02ea] drop-shadow-md bg-[#26a76d] font-signika'
+                        <h3 className='text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl !leading-tight pt-2 font-bold text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-[#29af77] dark:to-[#b0fa02ea] drop-shadow-md bg-[#26a76d] font-signika'
                         >
                             <Typewriter
                                 options={{
@@ -28,10 +28,12 @@ export default function Header() {
                                     autoStart: true,
                                     loop: true,
                                     deleteSpeed: 40,
+                                    cursor: true
+                                    
                                 }}
                             />
                         </h3>
-                        <p className='font-medium text-slate-600 dark:text-gray-300 text-sm max-w-2xl text-justify lg:text-base xl:text-lg pt-2 lg:pt-4 font-poppins'>
+                        <p className='font-medium text-slate-600 dark:text-gray-300 text-sm lg:max-w-2xl text-justify lg:text-base xl:text-lg pt-2 lg:pt-4 font-poppins'>
                             I&apos;ve experience website development with React Js, expecially with Next Js Framework, Express Js for Backend, and Sql or NoSql Database. I&apos;m willing to collaborate with you, if you need someone to help your website better, let&apos;s talk over the chat!
                         </p>
                         <div className='flex flex-wrap justify-left gap-4 lg:gap-8 items-center mt-8'>
