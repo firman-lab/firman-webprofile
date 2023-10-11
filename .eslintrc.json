@@ -7,7 +7,6 @@
     "semi": [1, "always"],
     "space-unary-ops": 2,
     "quotes": [1, "single", { "avoidEscape": true }],
-    "singleQuote": false,
     "printWidth": 120
   }
 }

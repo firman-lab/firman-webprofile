@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import ButtonText from '../atom/ButtonText';
 import ButtonIcon from '../atom/ButtonIcon';
 import sunIcon from '../../public/icons/sun.svg'
@@ -7,15 +8,14 @@ import moonIcon from '../../public/icons/moon.svg'
 
 
 const menu = [
-    { name: 'Project', href: '/', active: true },
-    { name: 'Blog', href: '/', active: false },
-    // { name: 'Contact', href: '/', active: false },
+    { name: 'Project', href: '/' },
+    { name: 'Blog', href: '/articles' },
+    { name: 'Free Template', href: '/template' },
 ];
 
 export default function Navbar({ dark, darkFunc }) {
-
+    const router = useRouter();
     const [open, setOpen] = useState(false);
-    // const [active, setActive] = useState('project');
 
     function setPop() {
         if (!open) {
@@ -41,7 +41,7 @@ export default function Navbar({ dark, darkFunc }) {
                 <div className='w-full hidden md:flex flex-row justify-between items-center transition ease-in-out duration-300'>
                     <div className='mx-auto '>
                         {menu.map((item, index) => (
-                            <a href={item.href} key={index} className='px-4 lg:px-8 font-semibold dark:text-slate-300 hover:text-purple-700 dark:hover:text-white hover:transition-all hover:ease-in hover:duration-200'>{item.name}</a>
+                            <a href={item.href} key={index} className={`px-4 lg:px-8 font-semibold dark:text-slate-300 hover:text-purple-700 dark:hover:text-white hover:transition-all hover:ease-in hover:duration-200 ${item.href === router.asPath ? 'active' : ''}`}>{item.name}</a>
                         ))}
                     </div>
                     {/* </div> */}
