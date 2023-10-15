@@ -9,7 +9,7 @@ import moonIcon from '../../public/icons/moon.svg'
 
 const menu = [
     { name: 'Project', href: '/' },
-    { name: 'Blog', href: '/articles' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Free Template', href: '/template' },
 ];
 
