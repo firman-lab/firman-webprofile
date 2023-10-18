@@ -1,28 +1,32 @@
-import { sync } from 'glob';
-import path from 'path';
-import fs from 'fs';
-import matter from 'gray-matter';
-import readingTime from 'reading-time';
+import path from "path";
+import fs from "fs";
+import matter from "gray-matter";
+import readingTime from "reading-time";
+import { sync } from "glob";
 
-const articlePath = path.join(process.cwd(), 'data/post');
+const articlesPath = path.join(process.cwd(), "articles");
 
+// get unique article, when it is clicked on, by the user
+// on the blog page
 export async function getSlug() {
-    const paths = sync(`${articlePath}/*.mdx`);
+    const paths = sync(`${articlesPath}/*.mdx`);
 
     return paths.map((path) => {
         // holds the paths to the directory of the article
-        const pathContent = path.split('/');
-        const fileName = pathContent[pathContent.length - 1];
-        const [slug, _extension] = fileName.split('.');
-
+        const parts = path.split("\\");
+        const fileName = parts[parts.length - 1]; // gets the last part of path with /name.mdx
+        const [slug, _extension] = fileName.split(".");
+        console.log("slug", slug)
         return slug;
-    })
+    });
 }
 
 export async function getArticleFromSlug(slug) {
-    const articleDir = path.join(articlePath, `${slug}.mdx`);
+    const articleDir = path.join(articlesPath, `${slug}.mdx`);
     const source = fs.readFileSync(articleDir);
     const { content, data } = matter(source);
+
+    // console.log(data)
 
     return {
         content,
@@ -33,28 +37,29 @@ export async function getArticleFromSlug(slug) {
             publishedAt: data.publishedAt,
             readingTime: readingTime(source).text,
             ...data,
-        }
-    }
+        },
+    };
 }
 
+// get the path that stores all the articles or blog post
 export async function getAllArticles() {
-    const articles = fs.readdirSync(path.join(process.cwd(), 'data/post'))
+    const articles = fs.readdirSync(path.join(process.cwd(), "/articles"));
 
     return articles.reduce((allArticles, articleSlug) => {
         // get parsed data from mdx files in the "articles" dir
         const source = fs.readFileSync(
-            path.join(process.cwd(), 'data/post', articleSlug),
-            'utf-8'
-        )
-        const { data } = matter(source)
+            path.join(process.cwd(), "/articles", articleSlug),
+            "utf-8"
+        );
+        const { data } = matter(source);
 
         return [
             {
                 ...data,
-                slug: articleSlug.replace('.mdx', ''),
+                slug: articleSlug.replace(".mdx", ""),
                 readingTime: readingTime(source).text,
             },
             ...allArticles,
-        ]
-    }, [])
+        ];
+    }, []);
 }
