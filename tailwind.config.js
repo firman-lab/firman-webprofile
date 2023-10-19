@@ -25,8 +25,14 @@ module.exports = {
                 },
             },
             display: ['group-hover'],
+            screens: {
+                'mobile': '320px', // Define a custom mobile breakpoint
+            },
         },
+
     },
     darkMode: 'class',
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/typography'),
+    ],
 };

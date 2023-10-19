@@ -72,7 +72,7 @@ export default function BlogPage({ posts }) {
                                                         <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
                                                         <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
                                                     </svg>
-                                                    Ditulis oleh : Irsyad A. P
+                                                    Ditulis oleh : Joshe A. P
                                                 </p>
                                             </div>
                                         </div>
@@ -103,12 +103,12 @@ export default function BlogPage({ posts }) {
                     <div className='relative py-8 md:py-16 lg:py-20 xl:py-24'>
                         <div className='grid grid-cols-12 max-w-screen-2xl mx-auto'>
                             <section className='col-span-10 col-start-2'>
-                                <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-y-12 sm:gap-x-12 lg:gap-y-24 lg:gap-x-24'>
+                                <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-y-12 sm:gap-x-12'>
                                     {posts.map((frontMatter, index) => (
-                                        <li key={index} className='overflow-hidden flex flex-col relative h-full'>
+                                        <li key={index} className='overflow-hidden flex flex-col relative h-full bg-slate-900 rounded-md border-[1px] border-slate-600 p-4 hover:transition-all hover:scale-105 hover:delay-75'>
                                             <Link className='flex-1' href={`/blog/${frontMatter.slug}`} passHref>
                                                 <div className='p-0'>
-                                                    <Image src={frontMatter.hero_image} height={600} width={600} className='object-cover object-center' alt='banner-blog1' />
+                                                    <Image src={frontMatter.hero_image} height={600} width={600} className='object-contain object-center h-48' alt='banner-blog1' />
                                                     <div className='mt-2.5 lg:mt-3.5 flex gap-x-2 md:gap-x-3 text-xs md:text-sm flex-wrap items-center [&>div]:text-indigo-600 [&>div]:hover:text-indigo-700 '>
                                                         <div>{frontMatter.slug}</div>
                                                         <div>Realeased</div>
