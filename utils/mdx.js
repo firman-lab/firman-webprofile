@@ -13,7 +13,7 @@ export async function getSlug() {
 
     return paths.map((path) => {
         // holds the paths to the directory of the article
-        const parts = path.split("\\");
+        const parts = path.split("/"||"\\");
         const fileName = parts[parts.length - 1]; // gets the last part of path with /name.mdx
         const [slug, _extension] = fileName.split(".");
         console.log("slug", slug)
