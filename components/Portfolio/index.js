@@ -8,7 +8,7 @@ export default function Portfolio() {
             <hr className='pb-8 mx-8 md:hidden'></hr>
             <div className='px-8'>
                 <h3 className='text-2xl lg:text-3xl xl:text-4xl text-center font-bold text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-[#29af77] dark:to-[#53e0a1] bg-[#26a76d] drop-shadow-md !leading-normal font-signika'>Portfolio Project</h3>
-                <p className='text-sm lg:text-base xl:text-lg text-center max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl font-medium pt-2 text-gray-500 dark:text-gray-300 md:mb-8 mb-4 mx-auto font-poppins'>This is some of project that I have code for a few years. it's online and you can check it when you want.</p>
+                <p className='text-sm lg:text-base xl:text-lg text-center max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl font-medium pt-2 text-gray-500 dark:text-gray-300 md:mb-8 mb-4 mx-auto font-poppins'>This is some of project that I have code for a few years. it&lsquo;s online and you can check it when you want.</p>
             </div>
             <div className='flex flex-wrap gap-8 justify-around items-center px-4 pt-8'>
                 <Link href='https://ifixied.co.id' target={'_blank'} rel='noreferrer'>
