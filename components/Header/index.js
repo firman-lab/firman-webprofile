@@ -27,7 +27,7 @@ export default function Header() {
                                     ],
                                     autoStart: true,
                                     loop: true,
-                                    deleteSpeed: 40,
+                                    deleteSpeed: 40
                                 }}
                             />
                         </h3>
