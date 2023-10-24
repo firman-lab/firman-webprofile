@@ -28,7 +28,6 @@ export default function Header() {
                                     autoStart: true,
                                     loop: true,
                                     deleteSpeed: 40,
-                                    cursor: '|'
 
                                 }}
                             />
