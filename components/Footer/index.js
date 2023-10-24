@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-export default function footer() {
+export default function Footer() {
     return (
         <footer className='py-6 lg:py-4 xl:pt-16 bg-gradient-to-b  from-[#34996b] to-[#0c683d] dark:bg-gradient-to-b dark:from-slate-900 dark:to-[#2a554249]'>
             <div className='max-w-screen-2xl grid grid-cols-12 mx-auto'>

@@ -30,7 +30,7 @@ export default function Home() {
                     <Navbar dark={isDark} darkFunc={setDark} />
                     <Header />
                     <Portfolio />
-                    <Footer />
+                    <Footer/>
                 </main>
             </div>
         </>

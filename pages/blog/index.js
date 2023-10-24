@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Head from "next/head";
-import Link from "next/link";
-import { getAllArticles } from "../../utils/mdx";
-import dayjs from "dayjs";
+import Head from 'next/head';
+import Link from 'next/link';
+import { getAllArticles } from '../../utils/mdx';
+import dayjs from 'dayjs';
 import Image from 'next/image';
-import Navbar from "../../components/Navbar";
+import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 export default function BlogPage({ posts }) {
@@ -46,7 +46,7 @@ export default function BlogPage({ posts }) {
                                             <span className='h-px mt-6 mb-5 w-full hidden md:inline-block bg-gradient-to-r from-slate-300 dark:from-slate-700 via-transparent to-transparent'></span>
                                             <div className='text-xs text-slate-500 dark:text-slate-400 flex flex-col gap-y-2 [&_svg]:inline [&_svg]:w-4 [&_svg]:h-4 md:[&_svg]:w-5 md:[&_svg]:h-5 [&_svg]:stroke-1 [&_svg]:mr-2'>
                                                 <p>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-clock-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" strokeLinejoin="round">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-clock-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                                         <rect x="4" y="4" width="16" height="16" rx="1"></rect>
                                                         <path d="M12 7v5l3 3"></path><path d="M4 12h1"></path>
@@ -55,7 +55,7 @@ export default function BlogPage({ posts }) {
                                                     4 min read
                                                 </p>
                                                 <p>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-calendar" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" strokeLinejoin="round">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-calendar" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                                         <rect x="4" y="5" width="16" height="16" rx="2"></rect>
                                                         <line x1="16" y1="3" x2="16" y2="7"></line>
@@ -67,7 +67,7 @@ export default function BlogPage({ posts }) {
                                                     Published on 25 Jan
                                                 </p>
                                                 <p>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" strokeLinejoin="round">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                                         <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
                                                         <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
@@ -89,10 +89,10 @@ export default function BlogPage({ posts }) {
                             <section className='col-span-10 col-start-2'>
                                 <div className='flex items-center gap-x-2'>
                                     <a className='font-semibold text-invert whitespace-nowrap gap-x-2 items-center sm:inline-flex hidden' href={'/'}>F-Blog
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 inline" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="9 6 15 12 9 18"></polyline></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 inline" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="9 6 15 12 9 18"></polyline></svg>
                                     </a>
                                     <a className='font-semibold text-invert whitespace-nowrap gap-x-2 items-center inline-flex' href='#'>Artikel
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 inline" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="9 6 15 12 9 18"></polyline></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 inline" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="9 6 15 12 9 18"></polyline></svg>
                                     </a>
                                     <a className='overflow-hidden text-slate-400'>Terbaru
                                     </a>
@@ -110,13 +110,13 @@ export default function BlogPage({ posts }) {
                                                 <div className='p-0'>
                                                     <Image src={frontMatter.hero_image} height={600} width={600} className='object-contain object-center h-48' alt='banner-blog1' />
                                                     <div className='mt-2.5 lg:mt-3.5 flex gap-x-2 md:gap-x-3 text-xs md:text-sm flex-wrap items-center [&>div]:text-indigo-600 [&>div]:hover:text-indigo-700 '>
-                                                        <div>{frontMatter.slug}</div>
+                                                        <div>New</div>
                                                         <div>Realeased</div>
                                                     </div>
-                                                    <div className='mt-2.5 text-slate-800 dark:text-slate-200 max-w-sm leading-tight font-medium lg:mt-3.5 text-base'>{frontMatter.title}</div>
-                                                    <div className='text-slate-500 dark:text-slate-400 leading-relaxed mt-2.5 lg:mt-3.5 text-sm md:line-clamp-3'>
+                                                    <div className='mt-2.5 text-slate-800 dark:text-slate-200 max-w-sm leading-tight font-medium lg:mt-3.5 text-base md:line-clamp-2'>{frontMatter.title}</div>
+                                                    <p className='text-slate-500 dark:text-slate-400 leading-relaxed mt-2.5 lg:mt-3.5 text-xs md:line-clamp-3'>
                                                         {frontMatter.excerpt}
-                                                    </div>
+                                                    </p>
                                                 </div>
                                             </Link>
                                         </li>
@@ -129,7 +129,7 @@ export default function BlogPage({ posts }) {
                 </main>
             </div>
         </>
-    )
+    );
 }
 
 export async function getStaticProps() {
@@ -148,5 +148,5 @@ export async function getStaticProps() {
         props: {
             posts: articles.reverse(),
         },
-    }
+    };
 }
