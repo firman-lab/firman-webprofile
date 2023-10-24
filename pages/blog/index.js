@@ -29,17 +29,17 @@ export default function BlogPage({ posts }) {
                 </Head>
                 <main className='w-full relative dark:bg-slate-900 transition-all ease-in duration-300'>
                     <Navbar dark={isDark} darkFunc={setDark} />
-                    <div className='pt-32 pb-8 lg:pt-64 lg:pb-32 '>
+                    <div className='pt-32 pb-8 lg:pt-48 lg:pb-28 '>
                         <div className='grid grid-cols-12 max-w-screen-2xl mx-auto'>
                             <section className='col-span-10 col-start-2'>
                                 <div className='relative flex flex-col-reverse lg:flex-row justify-between gap-6 lg:gap-12'>
                                     <div className='w-full lg:w-7/12'>
-                                        <a className='font-bold max-w-xl text-xl lg:text-5xl tracking-tight leading-none dark:text-white' href='#'>
-                                            <h1>Bootstrap Sudah Mendukung Color Modes</h1>
+                                        <a className='font-bold max-w-xl text-xl lg:text-5xl tracking-tight leading-none dark:text-white' href={`/blog/${posts[0].slug}`} passHref>
+                                            <h1>{posts[0].title}</h1>
                                         </a>
                                         <div className='md:block hidden'>
                                             <div className='text-slate-500 dark:text-slate-400 mt-2 md:text-lg'>
-                                                Sejak versi bootstrap v5.3, bootstrap sepenuh nya telah mendukung fitur yang namanya color modes, karena namanya color modes, maka ini juga sudah termasuk dengan yang namanya dark mode.
+                                                {posts[0].excerpt}
                                             </div>
                                         </div>
                                         <div className='text-xs tracking-tighter sm:text-sm mt-4'>
@@ -52,7 +52,7 @@ export default function BlogPage({ posts }) {
                                                         <path d="M12 7v5l3 3"></path><path d="M4 12h1"></path>
                                                         <path d="M19 12h1"></path><path d="M12 19v1"></path>
                                                     </svg>
-                                                    4 min read
+                                                    {posts[0].readingTime}
                                                 </p>
                                                 <p>
                                                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-calendar" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -64,7 +64,7 @@ export default function BlogPage({ posts }) {
                                                         <line x1="11" y1="15" x2="12" y2="15"></line>
                                                         <line x1="12" y1="15" x2="12" y2="18"></line>
                                                     </svg>
-                                                    Published on 25 Jan
+                                                    {dayjs(posts[0].publishedAt).format('MMMM D, YYYY')}
                                                 </p>
                                                 <p>
                                                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -72,13 +72,13 @@ export default function BlogPage({ posts }) {
                                                         <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
                                                         <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
                                                     </svg>
-                                                    Ditulis oleh : Joshe A. P
+                                                    {posts[0].author}
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <a className='w-full lg:w-5/12 shrink-0' href='#'>
-                                        <Image alt='img-article' src={'/images/blog-1.webp'} width={300} height={100} className='w-full rounded-lg sm:max-w-full' />
+                                    <a className='w-full lg:w-5/12 shrink-0' href={`/blog/${posts[0].slug}`} passHref>
+                                        <Image alt='img-article' src={posts[0].hero_image} width={300} height={100} className='w-full rounded-lg sm:max-w-full' />
                                     </a>
                                 </div>
                             </section>

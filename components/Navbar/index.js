@@ -10,7 +10,7 @@ import moonIcon from '../../public/icons/moon.svg';
 const menu = [
     { name: 'Project', href: '/' },
     { name: 'Blog', href: '/blog' },
-    { name: 'Free Template', href: '/template' },
+    { name: 'Free Template', href: '#' },
 ];
 
 export default function Navbar({ dark, darkFunc }) {
@@ -53,7 +53,7 @@ export default function Navbar({ dark, darkFunc }) {
                             (<Image src='/icons/moon.svg' width={20} height={20} alt='ic-moon' />)}
                     </button> */}
                     <ButtonIcon onClick={darkFunc} icon={dark ? sunIcon : moonIcon} />
-                    <ButtonText title={'Mail me!'} />
+                    <ButtonText title={'Chat me!'} />
                 </div>
                 <div className='md:hidden'>
                     <button className='p-2 bg-button-green rounded-lg' onClick={setPop}>
