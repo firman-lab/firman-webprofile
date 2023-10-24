@@ -13,6 +13,6 @@
     -webkit-line-clamp: 3;
   }
   .active {
-    @apply bg-purple-800 text-white px-2 pt-2;
+    @apply !text-white underline underline-offset-8 decoration-slate-400;
   }
 }

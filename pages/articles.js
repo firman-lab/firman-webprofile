@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export default function Articles() {
 
-    const [isDark, setIsDark] = useState(false);
+    const [isDark, setIsDark] = useState(true);
 
     function setDark() {
         if (isDark === false) {

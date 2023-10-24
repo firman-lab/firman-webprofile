@@ -1,0 +1,57 @@
+---
+title: Tutorial Membuat Project Baru di Next.js
+publishedAt: "2023-10-22"
+hero_image: /images/blog-1.webp
+excerpt: "Next Js merupakan framework dari React.js yang bersifat _Open Source_ dan dibangun diatas Node.js."
+author: "Firman Hids"
+username: "@fir_manh"
+---
+
+Halo, pada kesempatan kali ini kita akan belajar membuat project baru di Next.Js dengan Tailwind Css.
+
+## Apa itu Next.Js ?
+
+> Next Js is an open-source web developement framework built on top og Node.Js enabling React based web applications functionalities such as server-side rendering and generating static websites.
+
+Next Js merupakan framework dari React.js yang bersifat _Open Source_ dan dibangun diatas Node.js. Next.js sangat popular akarna kemudahannyadan mendukung fitur yang sangat bagus seperti SSR, SSG, routing based file, zero config, fast refresh, Typescript, image Optimization, dan masih banyak lagi
+
+## Kenapa harus Next.js ?
+
+Yang pertama tentunya karena kemudahannya, kita sudah tidak perlu lagi melakukan banyak konfigurasisecara manual, baik untuk routing maupun konfigurasi lainnya.
+Selain itu Next.js juga _SEO friendly_ dengan kemudahan dukungan SSR _(Server Side Rendering)_ yang sudah _build in_ didalamnya.
+
+### Langkah 1 - Instalasi Node.js
+
+Sebelum kita membuat project baru dengan Next.js, kita perlu melakukan instalasi Node.js terlebih dahulu di dalam komputer.
+Lakukan Instalasi node js di komputer masing masing melalui link berikut : [https:nodejs.org/en/download/](https:nodejs.org/en/download/). Ikuti langkah instalasinya kemudian setelah selesai bisa kita cek dengan pergi ke CMD/terminal :
+
+```sh
+node -v
+```
+
+Setelah berhasil menginstal Node.js maka `NPM` _(Node Package Manager)_ juga otomatis ikut terinstal. kita bisa mengecek dengan mengetik do CMD/Terminal:
+
+```sh
+npm -v
+```
+
+### Langkah 2 - Instalasi Next.js
+
+Buka terminal di root folder tempat kalian ingin menyimpan file project, kemudian ketik _command_ berikut:
+
+```sh
+npm install next@latest react@latest react-dom@latest
+```
+
+dalam proses instalasi akan muncul _prompt_ seperti dibawah ini. isi dan pilih sesuai dengan yang kalian butuhkan.
+
+```sh
+What is your project named? my-app
+Would you like to use TypeScript? No / Yes
+Would you like to use ESLint? No / Yes
+Would you like to use Tailwind CSS? No / Yes
+Would you like to use `src/` directory? No / Yes
+Would you like to use App Router? (recommended) No / Yes
+Would you like to customize the default import alias (@/*)? No / Yes
+What import alias would you like configured? @/*
+```
