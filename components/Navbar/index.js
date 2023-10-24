@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import ButtonText from '../atom/ButtonText';
 import ButtonIcon from '../atom/ButtonIcon';
-import sunIcon from '../../public/icons/sun.svg'
-import moonIcon from '../../public/icons/moon.svg'
+import sunIcon from '../../public/icons/sun.svg';
+import moonIcon from '../../public/icons/moon.svg';
 
 
 const menu = [
@@ -73,7 +73,7 @@ export default function Navbar({ dark, darkFunc }) {
                         ))}
                     </div>
                     <div className='py-4'>
-                        <button className='p-2 text-sm rounded-lg bg-gradient-to-tr from-[#34996b] to-[#118b6b] border-emerald-400 border-[1px] hover:bg-gradient-to-tr hover:from-[#45A38C] hover:to-[#4a917e] hover:scale-110 hover:transition-all hover:duration-200' onClick={darkFunc}>
+                        <button disabled className='p-2 text-sm rounded-lg bg-gradient-to-tr from-[#34996b] to-[#118b6b] border-emerald-400 border-[1px] hover:bg-gradient-to-tr hover:from-[#45A38C] hover:to-[#4a917e] hover:scale-110 hover:transition-all hover:duration-200' onClick={darkFunc}>
                             {dark ?
                                 (<Image src='/icons/sun.svg' width={20} height={20} alt='ic-sun' />)
                                 :
