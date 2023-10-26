@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
                function gtag(){dataLayer.push(arguments);}
                gtag('js', new Date());
              
-               gtag('config', G-MS1TSQE338);
+               gtag('config', 'G-MS1TSQE338');
             `}
             </Script>
             <Component {...pageProps} />
