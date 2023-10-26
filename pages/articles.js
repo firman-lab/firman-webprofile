@@ -45,7 +45,7 @@ export default function Articles() {
                                         <span className='h-px mt-6 mb-5 w-full hidden md:inline-block bg-gradient-to-r from-slate-300 dark:from-slate-700 via-transparent to-transparent'></span>
                                         <div className='text-xs text-slate-500 dark:text-slate-400 flex flex-col gap-y-2 [&_svg]:inline [&_svg]:w-4 [&_svg]:h-4 md:[&_svg]:w-5 md:[&_svg]:h-5 [&_svg]:stroke-1 [&_svg]:mr-2'>
                                             <p>
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" strokeLinecap="round" stroke-linejoin="round">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-2" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" stroke-linejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                                     <rect x="4" y="4" width="16" height="16" rx="1"></rect>
                                                     <path d="M12 7v5l3 3"></path><path d="M4 12h1"></path>
@@ -54,7 +54,7 @@ export default function Articles() {
                                                 4 min read
                                             </p>
                                             <p>
-                                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-calendar" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" strokeLinecap="round" stroke-linejoin="round">
+                                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-calendar" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" stroke-linejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                                     <rect x="4" y="5" width="16" height="16" rx="2"></rect>
                                                     <line x1="16" y1="3" x2="16" y2="7"></line>
@@ -66,7 +66,7 @@ export default function Articles() {
                                                 Published on 25 Jan
                                             </p>
                                             <p>
-                                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" strokeLinecap="round" stroke-linejoin="round">
+                                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" stroke-linejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                                     <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
                                                     <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
@@ -88,10 +88,10 @@ export default function Articles() {
                         <section className='col-span-10 col-start-2'>
                             <div className='flex items-center gap-x-2'>
                                 <a className='font-semibold text-invert whitespace-nowrap gap-x-2 items-center sm:inline-flex hidden' href={'/'}>F-Blog
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 inline" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" strokeLinecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="9 6 15 12 9 18"></polyline></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 inline" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="9 6 15 12 9 18"></polyline></svg>
                                 </a>
                                 <a className='font-semibold text-invert whitespace-nowrap gap-x-2 items-center inline-flex' href='#'>Artikel
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 inline" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" strokeLinecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="9 6 15 12 9 18"></polyline></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 inline" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="9 6 15 12 9 18"></polyline></svg>
                                 </a>
                                 <a className='overflow-hidden text-slate-400'>Terbaru
                                 </a>
