@@ -34,7 +34,7 @@ export default function BlogPage({ posts }) {
                             <section className='col-span-10 col-start-2'>
                                 <div className='relative flex flex-col-reverse lg:flex-row justify-between gap-6 lg:gap-12'>
                                     <div className='w-full lg:w-7/12'>
-                                        <a className='font-bold max-w-xl text-xl lg:text-5xl tracking-tight leading-none dark:text-white' href={`/blog/${posts[0].slug}`} passHref>
+                                        <a className='font-bold max-w-xl text-xl lg:text-5xl tracking-tight leading-none dark:text-white' href={`/blog/${posts[0].slug}`}>
                                             <h1>{posts[0].title}</h1>
                                         </a>
                                         <div className='md:block hidden'>
@@ -77,7 +77,7 @@ export default function BlogPage({ posts }) {
                                             </div>
                                         </div>
                                     </div>
-                                    <a className='w-full lg:w-5/12 shrink-0' href={`/blog/${posts[0].slug}`} passHref>
+                                    <a className='w-full lg:w-5/12 shrink-0' href={`/blog/${posts[0].slug}`}>
                                         <Image alt='img-article' src={posts[0].hero_image} width={300} height={100} className='w-full rounded-lg sm:max-w-full' />
                                     </a>
                                 </div>
@@ -106,7 +106,7 @@ export default function BlogPage({ posts }) {
                                 <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-y-12 sm:gap-x-12'>
                                     {posts.map((frontMatter, index) => (
                                         <li key={index} className='overflow-hidden flex flex-col relative h-full bg-slate-900 rounded-md border-[1px] border-slate-600 p-4 hover:transition-all hover:scale-105 hover:delay-75'>
-                                            <Link className='flex-1' href={`/blog/${frontMatter.slug}`} passHref>
+                                            <Link className='flex-1' href={`/blog/${frontMatter.slug}`} >
                                                 <div className='p-0'>
                                                     <Image src={frontMatter.hero_image} height={600} width={600} className='object-contain object-center h-48' alt='banner-blog1' />
                                                     <div className='mt-2.5 lg:mt-3.5 flex gap-x-2 md:gap-x-3 text-xs md:text-sm flex-wrap items-center [&>div]:text-indigo-600 [&>div]:hover:text-indigo-700 '>
