@@ -2,9 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import ButtonIcon from '../atom/ButtonIcon';
-import igIcon from '../../public/icons/ig.svg'
-import linkedinIcon from '../../public/icons/linkind.svg'
-import gitIcon from '../../public/icons/git.svg'
+import igIcon from '../../public/icons/ig.svg';
+import linkedinIcon from '../../public/icons/linkind.svg';
+import gitIcon from '../../public/icons/git.svg';
 import Typewriter from 'typewriter-effect';
 
 export default function Header() {
@@ -21,9 +21,9 @@ export default function Header() {
                             <Typewriter
                                 options={{
                                     strings: [
-                                        "Front End Developer",
-                                        "Next.Js Developer",
-                                        "UI/UX Designer",
+                                        'Front End Developer',
+                                        'Next.Js Developer',
+                                        'UI/UX Designer',
                                     ],
                                     autoStart: true,
                                     loop: true,
