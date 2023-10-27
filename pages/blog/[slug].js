@@ -44,7 +44,11 @@ export default function Blog({ post: { source, frontmatter } }) {
         <>
             <div className={isDark ? 'dark' : ''}>
                 <Head>
-                    <title>{frontmatter.title} | blog</title>
+                    <title>{frontmatter.title}</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <meta property="og:url" content={`https://soonpro.my.id/blog/${frontMatter.slug}`} />
+                    <meta property="og:title" content={frontmatter.title} />
+                    <meta property="og:description" content={frontmatter.title} />
                 </Head>
                 <Navbar dark={isDark} darkFunc={setDark} />
                 <main className="font-poppins dark:bg-slate-900 pt-32 m-0 p-0">
