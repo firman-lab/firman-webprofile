@@ -231,7 +231,7 @@ export default function BlogPage({ posts }) {
                                             key={index}
                                             className="overflow-hidden flex flex-col relative h-full rounded-md border-[1px] border-slate-600 p-[1px] hover:transition-all hover:scale-105 hover:delay-75 group mx-auto transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#29af65] hover:via-[#02fad9e5] hover:to-[#86fa02ea]"
                                         >
-                                            <div class="group-hover:animate-spinslow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-white/90 to-transparent group-hover:visible"></div>
+                                            <div class="group-hover:animate-spinslow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-indigo-500/90 to-transparent group-hover:visible"></div>
                                             <Link
                                                 className="flex-1 relative bg-slate-900 rounded-md p-6"
                                                 href={`/blog/${frontMatter.slug}`}
