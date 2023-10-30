@@ -1,0 +1,29 @@
+---
+title: Cara menerapkan Server Side Rendering (SSR) di Next.JS
+publishedAt: "2023-10-30"
+hero_image: /images/article/server-side-rendering-next-js.png
+excerpt: "Next Js merupakan framework dari React.js yang bersifat Open Source dan dibangun diatas Node.js."
+author: "Hudiansyahrobby"
+username: "Hudiansyahrobby"
+---
+
+Next.js merupakan framework dari React.JS yang memberikan berbagai macam fitur dan kemudahan, seperti routing berdasarkan halaman(pages), typescript support, image optimization,
+internationalization, dll.
+Next.JS sendiri mendukung berbagai macam metoda rendering seperti CSR (Client Side Rendering), SSR (Server Side Rendering), dan SSG (Server Side Generation).
+untuk mengetahui perbedaan serta kelebihan dan kekurangan dari CSR dan SSR, [silahkan baca artikel ini](https://soonpro.my.id).
+
+Server Side Rendering atau disingkat SSR merupakan sebuah metode dalam memuat sebuah website berbasis javascript pada suatu server.
+Untuk menerapkan SSR kita dapat menggunakan berbagai tools seperti Next.js, Remix.js, nuxt.js, dll.
+Pada srtikel kali ini kita akan membahas cara imolementasi SSR dengan Next.Js.
+
+## Penerapan SSR dengan Next.JS
+Pada tutorial kaoi ini kita menggunakan npm dan typescript serta menggunakan API [https://jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com)
+
+### 1. Setup Next.JS
+
+setup dengan mengetikan 
+
+``` sh
+npm install next@latest react@latest react-dom@latest
+```
+seperti pada [artikel sebelumya](https://soonpro.my.id/blog/tutorial-membuat-project-baru-di-next-js)

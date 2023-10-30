@@ -64,10 +64,10 @@ export default function Blog({ post: { source, frontmatter } }) {
                             <div className="w-full flex flex-auto justify-center items-center">
                                 <Image
                                     src={frontmatter.hero_image}
-                                    width={200}
-                                    height={200}
+                                    width={500}
+                                    height={500}
                                     alt="Image Article"
-                                    className="md:w-1/2 object-contain pt-8"
+                                    className="md:w-full object-contain pt-8"
                                 />
                             </div>
                             <article className="dark:text-white pt-8 flex flex-row justify-center items-center w-full">
