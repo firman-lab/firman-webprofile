@@ -26,4 +26,154 @@ setup dengan mengetikan
 ``` sh
 npm install next@latest react@latest react-dom@latest
 ```
-seperti pada [artikel sebelumya](https://soonpro.my.id/blog/tutorial-membuat-project-baru-di-next-js)
+kemudian ikuti alur install seperti pada [artikel sebelumya](https://soonpro.my.id/blog/tutorial-membuat-project-baru-di-next-js)
+
+### 2. Jalankan Server
+untuk menjalankan ketikan perintah
+```sh
+npm run dev
+```
+
+### 3. Tambahkan Fungsi getServerSideProps
+Untuk menerapkan SSR pada Next.JS perlu menggunakan fungsi bawaan yaitu *getServerSideProps*. Penggunaanya cukup mudah, tetapi sebelumnya kita akan membuat 
+tipe data terlebih dahulu. Tambahkan kode berikut pada file *pages/index.tsx*.
+```tsx
+type Todos = {
+    userId : number;
+    id : number;
+    title : string;
+    completed : boolean;
+}
+```
+
+Selanjutnya pada file yang sama kita akan menambahkan fungsi *getServerSideProps* seperti ini :
+
+```tsx
+export async function getServerSideProps() {
+    //fetch ddata from API
+    const res = await fetch('https://jsonplaceholder.typicode.com/todos');
+    const data : Todos[] = await res.json();
+
+    //pass data to the page via props
+    return {
+        props: { data };
+    }
+}
+```
+pada kode diatas *getServerSideProps* melakukan fetching data dari eksternal API. kemudian response datanya di transform menjadi format JSON.
+lalu hasil transform di passing ke fungsi utama melalui object props.
+
+```tsx
+const Home = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+  return (
+    <div>
+      <Head>
+        <title>SSR Demo</title>
+        <meta name=”description” content=”SSR Demo” />
+        <link rel=”icon” href=”/favicon.ico” />
+     </Head>
+    <main className={styles.main}>
+      {data.map((todo) => {
+          return (
+             <div className={styles.container} key={todo.id}>
+               <h2 className={`${styles.title} ${todo.completed ? styles.isComplete : “”} `}>
+                 {todo.title}
+                </h2>
+             </div>
+        );
+      })}
+     </main>
+   </div>
+);
+};
+```
+
+Kode diatas terdapat fungsi bernama *Home* yang akan menerima object. didalam object tsb dterdapat *attribute*
+dengan nama *data*. Data tsb diperoleh dari hasil *fetch* eksternal API. kemudian data tersebut ditampilkan pada DOM.
+
+Agar tampilan website menjadi lebih menarik, perlu ditambahkan beberapa kode di file *home.module.css*
+
+```css
+.main {
+  min-height: 100vh;
+  padding: 1rem 0;
+  margin: 0 20px;}.container {
+  background-color: aliceblue;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}.title {
+  font-size: 18px;
+  color: green;
+}.isComplete {
+  color: red;
+  text-decoration: line-through;
+}
+```
+berikut tampilan akhir dari website
+![ui website](/images/article/ssr-next.webp)
+
+untuk mengecek apakah SSR berjalan atau tidak , dapat dengan cara membuka *page source* pada browser dengan menekan *crtl+U*.
+Jika data-data yang di fetch sebelumnya tampil pada source code, maka SSR berhasil berjalan dengan baik.
+![ui website](/images/article/ssr-page.webp)
+
+dan ini full code dari file pages/index.tsx
+
+```tsx
+import type { InferGetServerSidePropsType } from "next";
+import Head from "next/head";
+
+import styles from "../styles/Home.module.css";
+
+type Todos = {
+  userId: number;
+  id: number;
+  title: string;
+  completed: boolean;
+};
+
+const Home = ({
+  data,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+  return (
+    <div>
+      <Head>
+        <title>SSR Demo</title>
+        <meta name="description" content="SSR Demo" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main className={styles.main}>
+        {data.map((todo) => {
+          return (
+            <div className={styles.container} key={todo.id}>
+              <h2
+                className={`${styles.title} ${
+                  todo.completed ? styles.isComplete : ""
+                } `}
+              >
+                {todo.title}
+              </h2>
+            </div>
+          );
+        })}
+      </main>
+    </div>
+  );
+};
+
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`https://jsonplaceholder.typicode.com/todos`);
+  const data: Todos[] = await res.json();
+
+  // Pass data to the page via props
+  return { props: { data } };
+}
+
+export default Home;
+```
+
+>#### Note:
+>Untuk melakukan SSR tidak harus menggunakan Next JS, dapat juga dengan menggunakan framework lainnya seperti 
+>[Remix.js](https://remix.run/docs/en/v1)
