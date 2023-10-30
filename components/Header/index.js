@@ -10,7 +10,7 @@ import Typewriter from 'typewriter-effect';
 export default function Header() {
     return (
         <>
-            <section className='container mx-auto px-8 pt-28 xl:pt-36'>
+            <section className='container mx-auto sm:px-8 pt-28 xl:pt-36'>
                 <div className='flex flex-col-reverse lg:flex-row gap-8 items-center justify-between'>
                     <div className='flex-1'>
                         <h3 className=' pt-1 lg:pt-8 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 to-emerald-300 dark:bg-gradient-to-br dark:from-gray-100 dark:text-gray-200 font-signika'>Hi, I&apos;m Firman</h3>
@@ -34,7 +34,7 @@ export default function Header() {
                         <p className='font-medium text-slate-600 dark:text-gray-300 text-sm lg:max-w-2xl text-justify lg:text-base xl:text-lg pt-2 lg:pt-4 font-poppins'>
                             I&apos;ve experience website development with React Js, expecially with Next Js Framework, Express Js for Backend, and Sql or NoSql Database. I&apos;m willing to collaborate with you, if you need someone to help your website better, let&apos;s talk over the chat!
                         </p>
-                        <div className='flex flex-wrap justify-left gap-4 lg:gap-8 items-center mt-8'>
+                        <div className='flex flex-wrap justify-between items-center md:justify-left gap-4 lg:gap-8 items-center mt-8'>
                             <a href='/Firman Hidayat-resume-3.pdf' download={true} target='_blank' rel="noopener noreferrer">
                                 <button className='px-3 lg:px-6 py-2 lg:py-2 text-sm lg:text-base text-white font-medium flex gap-2  font-poppins rounded-lg bg-gradient-to-tr from-[#34996b] to-[#118b6b] border-emerald-400 border-[1px] hover:bg-gradient-to-tr hover:from-[#45A38C] hover:to-[#4a917e] hover:scale-110 hover:transition-all hover:duration-200 '>
                                     <span>
