@@ -34,8 +34,8 @@ export default function Header() {
                         <p className='font-medium text-slate-600 dark:text-gray-300 text-sm lg:max-w-2xl text-justify lg:text-base xl:text-lg pt-2 lg:pt-4 font-poppins'>
                             I&apos;ve experience website development with React Js, expecially with Next Js Framework, Express Js for Backend, and Sql or NoSql Database. I&apos;m willing to collaborate with you, if you need someone to help your website better, let&apos;s talk over the chat!
                         </p>
-                        <div className='flex flex-wrap justify-between items-center md:justify-left gap-4 lg:gap-8 items-center mt-8'>
-                            <a href='/Firman Hidayat-resume-3.pdf' download={true} target='_blank' rel="noopener noreferrer">
+                        <div className='flex flex-wrap justify-between md:justify-left gap-4 lg:gap-8 items-center mt-8 max-w-sm'>
+                            <a href='/Firman-resume.pdf' download={true} target='_blank' rel="noopener noreferrer">
                                 <button className='px-3 lg:px-6 py-2 lg:py-2 text-sm lg:text-base text-white font-medium flex gap-2  font-poppins rounded-lg bg-gradient-to-tr from-[#34996b] to-[#118b6b] border-emerald-400 border-[1px] hover:bg-gradient-to-tr hover:from-[#45A38C] hover:to-[#4a917e] hover:scale-110 hover:transition-all hover:duration-200 '>
                                     <span>
                                         <Image src={'/icons/download.svg'} alt='download resume' width={24} height={24} className='w-5 lg:w-6' />

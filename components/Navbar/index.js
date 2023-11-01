@@ -69,7 +69,7 @@ export default function Navbar({ dark, darkFunc }) {
                 <div className='transition ease-in-out duration-300'>
                     <div className='pt-4 pb-8 flex flex-col gap-4 justify-start items-start'>
                         {menu.map((item, index) => (
-                            <a href={item.href} key={index} className='pt-2 lg:px-8 text-sm font-semibold dark:text-slate-300 hover:text-purple-700 dark:hover:text-white hover:transition-all hover:ease-in hover:duration-200'>{item.name}</a>
+                            <a href={item.href} key={index} className={`pt-2 lg:px-8 text-sm font-semibold dark:text-slate-300 hover:text-purple-700 dark:hover:text-white hover:transition-all hover:ease-in hover:duration-200 ${item.href === router.asPath ? 'active' : ''}`}>{item.name}</a>
                         ))}
                     </div>
                     {/* <div className='py-4'>
