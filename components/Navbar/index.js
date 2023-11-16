@@ -10,7 +10,7 @@ import ButtonText from '../atom/ButtonText';
 const menu = [
     { name: 'Showcase', href: '/' },
     { name: 'Articles', href: '/blog' },
-    { name: 'Free Template', href: '#' },
+    // { name: 'Free Template', href: '#' },
 ];
 
 export default function Navbar({ dark, darkFunc }) {
