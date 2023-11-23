@@ -1,0 +1,117 @@
+---
+title: Redux Toolkit di Next Js
+publishedAt: "2022-04-12"
+hero_image: /images/article/redux-toolkit-nextjs.png
+excerpt: "Redux Toolkit adalah pustaka yang memudahkan pengembang mengelola state secara global di aplikasi React/Next.js."
+author: "Firman Hids x Bard"
+username: "@fir_manh"
+---
+
+Redux Toolkit adalah pustaka yang memudahkan pengembang mengelola state secara global di aplikasi React/Next.js. Pustaka ini mengatasi masalah umum yang terkait dengan penerapan Redux tradisional, seperti konfigurasi yang rumit, kode boilerplate yang berlebihan, dan kebutuhan untuk menginstal paket multi.
+
+Next.js adalah kerangka kerja React yang populer untuk membangun situs web yang dirender di sisi server dan statis. Pustaka ini menawarkan berbagai fitur yang membantu pengembang membuat aplikasi yang siap produksi, termasuk rendering sisi server, pemecahan kode otomatis, dan kinerja yang dioptimalkan.
+
+Mengkombinasikan Next.js dengan Redux Toolkit menyediakan fondasi yang kokoh untuk membangun aplikasi yang skalabel dan dapat dirawat.
+
+##  Manfaat menggunakan Redux Toolkit di Next.js
+ Ada beberapa manfaat menggunakan Redux Toolkit di Next.js, antara lain:
+- **Simple**: Redux Toolkit menyederhanakan proses menyiapkan dan mengelola toko Redux. Pustaka ini menyediakan berbagai alat dan fungsionalitas yang dapat digunakan untuk membuat toko Redux yang efisien dan mudah dirawat.
+- **Efisien**: Redux Toolkit membantu pengembang menulis kode yang lebih efisien. Pustaka ini menyediakan berbagai fungsi dan komponen yang dapat digunakan untuk mengimplementasikan logika state secara lebih ringkas dan mudah dipahami.
+- **Teruji**: Redux Toolkit telah diuji secara luas dan terbukti aman dan andal. Pustaka ini telah digunakan oleh banyak pengembang di berbagai proyek, termasuk proyek-proyek skala besar.
+
+### Cara menggunakan Redux Toolkit di Next.js
+
+Untuk menggunakan Redux Toolkit di Next.js, Anda perlu mengikuti langkah-langkah berikut:
+
+**1. Instal Redux Toolkit dan React-Redux.**
+
+```sh
+npm install redux react-redux
+```
+
+**2. Buat Store Redux.**
+```jsx
+import { createStore } from "redux";
+
+const store = createStore(
+  reducers,
+  // Pilih middleware yang diinginkan
+);
+```
+**3. Buat reducers.**
+Reducers adalah fungsi yang digunakan untuk memodifikasi state Redux. Redux Toolkit menyediakan berbagai fungsi dan komponen yang dapat digunakan untuk membuat reducers yang efisien dan mudah dirawat.
+
+**4.Buat actions.**
+
+Actions adalah objek yang digunakan untuk memicu perubahan state Redux. Redux Toolkit menyediakan berbagai fungsi dan komponen yang dapat digunakan untuk membuat actions yang efisien dan mudah dirawat.
+
+**5. Buat store provider.**
+
+Store provider adalah komponen yang digunakan untuk menyediakan toko Redux ke komponen lain. Redux Toolkit menyediakan fungsi Provider yang dapat digunakan untuk membuat store provider.
+
+### Contoh penggunaan Redux Toolkit di Next.js
+
+Berikut adalah contoh penggunaan Redux Toolkit di Next.js:
+```jsx
+// JavaScript
+
+// src/store.js
+import { createStore } from "redux";
+
+const reducers = {
+  counter: (state = 0, action) => {
+    switch (action.type) {
+      case "INCREMENT":
+        return state + 1;
+      case "DECREMENT":
+        return state - 1;
+      default:
+        return state;
+    }
+  },
+};
+
+const store = createStore(reducers);
+
+export default store;
+```
+
+
+```jsx
+// JavaScript
+
+// src/pages/index.js
+import { useSelector, useDispatch } from "react-redux";
+
+const CounterPage = () => {
+  const counter = useSelector((state) => state.counter);
+  const dispatch = useDispatch();
+
+  const handleIncrement = () => dispatch({ type: "INCREMENT" });
+  const handleDecrement = () => dispatch({ type: "DECREMENT" });
+
+  return (
+    <div>
+      <h1>Counter</h1>
+      <p>Current counter value: {counter}</p>
+      <button onClick={handleIncrement}>Increment</button>
+      <button onClick={handleDecrement}>Decrement</button>
+    </div>
+  );
+};
+
+export default CounterPage;
+```
+
+Contoh kode di atas menunjukkan cara membuat toko Redux, reducers, actions, dan store provider. Kode ini juga menunjukkan cara menggunakan useSelector dan useDispatch untuk mengakses state dan dispatch actions dari dalam komponen React.
+
+### Kesimpulan
+
+Redux Toolkit adalah pustaka yang powerful dan serbaguna yang dapat membantu pengembang membuat aplikasi React yang lebih kompleks dan skalabel. Pustaka ini menyederhanakan proses menyiapkan dan mengelola toko Redux, sehingga pengembang dapat fokus pada pengembangan aplikasi.
+
+**Sources :**
+- [packages.tools.medtronicconnect.com/feeds/NPM/redux/4.0.1](https://packages.tools.medtronicconnect.com/feeds/NPM/redux/4.0.1)
+- [jsfiddle.net/thebearingedge/e8zf8akf/](https://jsfiddle.net/thebearingedge/e8zf8akf/)
+- [github.com/MANOJ-M-01/Redux-Core-React-Redux-ReduxToolKit-with-Javascript-and-TypeScript](https://github.com/MANOJ-M-01/Redux-Core-React-Redux-ReduxToolKit-with-Javascript-and-TypeScript)
+- [github.com/ddaspodder/UnitTesting](https://github.com/ddaspodder/UnitTesting)
+- [satisfactoryplace.tistory.com/344](https://satisfactoryplace.tistory.com/344)
