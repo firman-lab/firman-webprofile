@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 export default function Footer() {
@@ -35,31 +36,31 @@ export default function Footer() {
             <div className='col-span-full sm:col-span-6 lg:col-span-4'>
               <h3 className='mb-4 font-bold uppercase'>Media</h3>
               <div className='space-y-2 md:space-y-4 text-xs lg:text-sm font-medium font-poppins'>
-                <a className=' flex justify-start items-center gap-1' href='#'>
+                <Link className=' flex justify-start items-center gap-1' href='https://www.instagram.com/fir_manh/' target='_blank'>
                   <Image alt='ic-ig' className='object-contain' width={24} height={24} src='/icons/ig.svg' />
                   <span>Instagram</span>
-                </a>
-                <a className='flex justify-start items-center gap-1' href='#'>
+                </Link>
+                <Link className='flex justify-start items-center gap-1' href='https://www.linkedin.com/in/fhidayat400/' target='_blank'>
                   <Image alt='ic-linkedin' className='object-contain' width={24} height={24} src='/icons/linkind.svg' />
                   <span>Linked In</span>
-                </a>
-                <a className='flex justify-start items-center gap-1' href='#'>
+                </Link>
+                <Link className='flex justify-start items-center gap-1' href='https://github.com/firman-lab' target='_blank'>
                   <Image alt='ic-ig' className='object-contain' width={24} height={24} src='/icons/git.svg' />
                   <span>Github</span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className='col-span-full sm:col-span-6 lg:col-span-4 text-sm'>
               <h3 className='mb-4 font-bold uppercase'>Contact</h3>
               <div className='space-y-2 md:space-y-4 text-xs lg:text-sm font-medium font-poppins'>
-                <a className='flex justify-start items-center gap-1' href='#'>
+                <Link className='flex justify-start items-center gap-1' href='mailto:fhidayat400@gmail.com'>
                   <Image alt='ic-ig' className='object-contain' width={24} height={24} src='/icons/mail.svg' />
                   <span>fhidayat400@gmail.com</span>
-                </a>
-                <a className='flex justify-start items-center gap-1' href='#'>
+                </Link>
+                <Link className='flex justify-start items-center gap-1' href='https://wa.me/6283100553101' target='_blank'>
                   <Image alt='ic-ig' className='object-contain' width={24} height={24} src='/icons/wa.svg' />
                   <span>(+62) 831-0055-3101</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
