@@ -12,7 +12,7 @@ export default function Portfolio() {
       </div>
       <div className='flex flex-wrap gap-8 justify-around items-center px-4 pt-8'>
         <CardPortfolio title={'PCXFX by Primecodex LLC'} imgProject={'pf6.png'} link={'#'} desc={'Forex Market Information'} label={'Turnkey ID'}/>
-        <CardPortfolio title={'CMS Website'} imgProject={'pf5.png'} link={'#'} desc={'CMS for SaaS Website'} label={'iFixied Global ID'}/>
+        <CardPortfolio title={'CMS Website'} imgProject={'pf5.png'} link={'#'} desc={'CMS for Website'} label={'iFixied Global ID'}/>
         <CardPortfolio title={'iFixied Website'} imgProject={'pf4.png'} link={'https://ifixied.co.id'} desc={'SaaS Website'} label={'iFixied Global ID'}/>
         <a href='#'>
           <div className='relative overflow-hidden rounded-xl scale-100 shadow-lg hover:scale-105 ease-in-out duration-200 group'>

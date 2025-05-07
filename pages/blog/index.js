@@ -44,13 +44,13 @@ export default function BlogPage({ posts }) {
                   <div className="w-full lg:w-7/12">
                     <a
                       className="font-bold max-w-xl text-xl lg:text-5xl tracking-tight leading-none dark:text-white"
-                      href={`/blog/${posts[0].slug}`}
+                      href={`/blog/${posts[posts.length - 1].slug}`}
                     >
-                      <h1>{posts[0].title}</h1>
+                      <h1>{posts[posts.length - 1].title}</h1>
                     </a>
                     <div className="md:block hidden">
                       <div className="text-slate-500 dark:text-slate-400 mt-2 md:text-lg">
-                        {posts[0].excerpt}
+                        {posts[posts.length - 1].excerpt}
                       </div>
                     </div>
                     <div className="text-xs tracking-tighter sm:text-sm mt-4">
@@ -86,7 +86,7 @@ export default function BlogPage({ posts }) {
                             <path d="M19 12h1"></path>
                             <path d="M12 19v1"></path>
                           </svg>
-                          {posts[0].readingTime}
+                          {posts[posts.length - 1].readingTime}
                         </p>
                         <p>
                           <svg
@@ -119,7 +119,7 @@ export default function BlogPage({ posts }) {
                             <line x1="11" y1="15" x2="12" y2="15"></line>
                             <line x1="12" y1="15" x2="12" y2="18"></line>
                           </svg>
-                          {dayjs(posts[0].publishedAt).format('MMMM D, YYYY')}
+                          {dayjs(posts[posts.length - 1].publishedAt).format('MMMM D, YYYY')}
                         </p>
                         <p>
                           <svg
@@ -147,18 +147,18 @@ export default function BlogPage({ posts }) {
                               y2="10.5"
                             ></line>
                           </svg>
-                          {posts[0].author}
+                          {posts[posts.length - 1].author}
                         </p>
                       </div>
                     </div>
                   </div>
                   <a
                     className="w-full lg:w-5/12 shrink-0"
-                    href={`/blog/${posts[0].slug}`}
+                    href={`/blog/${posts[posts.length - 1].slug}`}
                   >
                     <Image
                       alt="img-article"
-                      src={posts[0].hero_image}
+                      src={posts[posts.length - 1].hero_image}
                       width={300}
                       height={100}
                       className="w-full rounded-lg sm:max-w-full"
@@ -231,38 +231,41 @@ export default function BlogPage({ posts }) {
             <div className="grid grid-cols-12 max-w-screen-2xl mx-auto">
               <section className="col-span-10 col-start-2">
                 <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-y-12 sm:gap-x-12">
-                  {posts.map((frontMatter, index) => (
-                    <li
-                      key={index}
-                      className="overflow-hidden flex flex-col relative h-full rounded-md border-[1px] border-slate-600 p-[1px] hover:transition-all hover:scale-105 hover:delay-75 group mx-auto transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#29af65] hover:via-[#02fad9e5] hover:to-[#86fa02ea]"
-                    >
-                      <div className="group-hover:animate-spinslow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-purple-500/90 to-transparent group-hover:visible"></div>
-                      <Link
-                        className="flex-1 relative bg-slate-900 rounded-md p-6"
-                        href={`/blog/${frontMatter.slug}`} onClick={() => setIsLoading(true)}
+                  {posts
+                    .slice()
+                    .reverse()         
+                    .map((frontMatter, index) => (
+                      <li
+                        key={index}
+                        className="overflow-hidden flex flex-col relative h-full rounded-md border-[1px] border-slate-600 p-[1px] hover:transition-all hover:scale-105 hover:delay-75 group mx-auto transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#29af65] hover:via-[#02fad9e5] hover:to-[#86fa02ea]"
                       >
-                        <div className="p-0">
-                          <Image
-                            src={frontMatter.hero_image}
-                            height={600}
-                            width={600}
-                            className="object-contain object-center h-48"
-                            alt="banner-blog1"
-                          />
-                          <div className="mt-2.5 lg:mt-3.5 flex gap-x-2 md:gap-x-3 text-xs md:text-sm flex-wrap items-center [&>div]:text-[#29af77] [&>div]:hover:text-[#29af77] ">
-                            <div>New</div>
-                            <div>Realeased</div>
+                        <div className="group-hover:animate-spinslow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-purple-500/90 to-transparent group-hover:visible"></div>
+                        <Link
+                          className="flex-1 relative bg-slate-900 rounded-md p-6"
+                          href={`/blog/${frontMatter.slug}`} onClick={() => setIsLoading(true)}
+                        >
+                          <div className="p-0">
+                            <Image
+                              src={frontMatter.hero_image}
+                              height={600}
+                              width={600}
+                              className="object-contain object-center h-48"
+                              alt="banner-blog1"
+                            />
+                            <div className={'mt-2.5 lg:mt-3.5 flex gap-x-2 md:gap-x-3 text-xs md:text-sm flex-wrap items-center [&>div]:text-[#29af77] [&>div]:hover:text-[#29af77]'}>
+                              <div className={index === 0 ? 'block' : 'hidden' }>New</div>
+                              <div>Realeased</div>
+                            </div>
+                            <div className="mt-2.5 text-slate-800 dark:text-slate-200 max-w-sm leading-tight font-medium lg:mt-3.5 text-base md:line-clamp-2">
+                              {frontMatter.title}
+                            </div>
+                            <p className="text-slate-500 dark:text-slate-400 leading-relaxed mt-2.5 lg:mt-3.5 text-xs md:line-clamp-3">
+                              {frontMatter.excerpt}
+                            </p>
                           </div>
-                          <div className="mt-2.5 text-slate-800 dark:text-slate-200 max-w-sm leading-tight font-medium lg:mt-3.5 text-base md:line-clamp-2">
-                            {frontMatter.title}
-                          </div>
-                          <p className="text-slate-500 dark:text-slate-400 leading-relaxed mt-2.5 lg:mt-3.5 text-xs md:line-clamp-3">
-                            {frontMatter.excerpt}
-                          </p>
-                        </div>
-                      </Link>
-                    </li>
-                  ))}
+                        </Link>
+                      </li>
+                    ))}
                 </ul>
               </section>
             </div>
