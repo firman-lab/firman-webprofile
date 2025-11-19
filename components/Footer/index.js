@@ -11,23 +11,27 @@ export default function Footer() {
             <div className='col-span-full sm:col-span-6 lg:col-span-4'>
               <h3 className='mb-4 font-bold uppercase'>Skill</h3>
               <div className='space-y-2 md:space-y-4 text-xs lg:text-sm font-medium font-poppins'>
-                <div className='flex justify-start items-center gap-1'>
+                <div className='flex justify-start items-center gap-2'>
                   <Image alt='ic-react' src={'/icons/react.svg'} width={24} height={24} />
                   <span>React Js</span>
                 </div>
-                <div className='flex justify-start items-center gap-1'>
+                <div className='flex justify-start items-center gap-2'>
                   <Image alt='ic-next' src={'/icons/nextjs.svg'} width={24} height={24} />
                   <span>Next Js</span>
                 </div>
-                <div className='flex justify-start items-center gap-1'>
+                <div className='flex justify-start items-center gap-2'>
+                  <Image alt='ic-vue' src={'/icons/vue.svg'} width={24} height={24} />
+                  <span>Vue Js</span>
+                </div>
+                <div className='flex justify-start items-center gap-2'>
                   <Image alt='ic-tail' src={'/icons/tailwind.svg'} width={24} height={24} />
                   <span>Tailwind CSS</span>
                 </div>
-                <div className='flex justify-start items-center gap-1'>
+                <div className='flex justify-start items-center gap-2'>
                   <Image alt='ic-ex' src={'/icons/js.svg'} width={24} height={24} />
                   <span>Express Js</span>
                 </div>
-                <div className='flex justify-start items-center gap-1'>
+                <div className='flex justify-start items-center gap-2'>
                   <Image alt='ic-sql' src={'/icons/postgresql.svg'} width={24} height={24} />
                   <span>Sql</span>
                 </div>

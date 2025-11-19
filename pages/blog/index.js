@@ -176,7 +176,7 @@ export default function BlogPage({ posts }) {
                     className="font-semibold text-invert whitespace-nowrap gap-x-2 items-center sm:inline-flex hidden"
                     href={'/'}
                   >
-                                        F-Blog
+                                        Beranda
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-3.5 h-3.5 inline"
@@ -232,8 +232,6 @@ export default function BlogPage({ posts }) {
               <section className="col-span-10 col-start-2">
                 <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-y-12 sm:gap-x-12">
                   {posts
-                    .slice()
-                    .reverse()         
                     .map((frontMatter, index) => (
                       <li
                         key={index}
@@ -281,19 +279,16 @@ export default function BlogPage({ posts }) {
 export async function getStaticProps() {
   const articles = await getAllArticles();
 
-  articles
-    .map((article) => article.data)
-    .sort((a, b) => {
-      // if (a.data.publishedAt > b.data.publishedAt) return 1;
-      // if (a.data.publishedAt < b.data.publishedAt) return -1;
-      const aDate = a.data.publishedAt;
-      const bDate = b.data.publishedAt;
-      return aDate - bDate;
-    });
+  // Sort articles by publishedAt date (newest first)
+  const sortedArticles = articles.sort((a, b) => {
+    const aDate = new Date(a.publishedAt);
+    const bDate = new Date(b.publishedAt);
+    return bDate - aDate; // Newest first
+  });
 
   return {
     props: {
-      posts: articles,
+      posts: sortedArticles,
     },
   };
 }
