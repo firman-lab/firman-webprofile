@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import ButtonText from '../atom/ButtonText';
 // import ButtonIcon from '../atom/ButtonIcon';
@@ -16,6 +16,15 @@ const menu = [
 export default function Navbar({ dark, darkFunc }) {
   const router = useRouter();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   function setPop() {
     if (!open) {
@@ -27,7 +36,11 @@ export default function Navbar({ dark, darkFunc }) {
   }
 
   return (
-    <section className='fixed w-full z-10 px-8 md:px-12 dark:bg-slate-900/80 bg-white/80 backdrop-blur-md dark:transition dark:ease-in dark:duration-200'>
+    <section className={`fixed w-full z-50 px-8 md:px-12 transition-all duration-300 ${
+      scrolled || open
+        ? 'dark:bg-slate-900/80 bg-white/80 backdrop-blur-md shadow-sm'
+        : 'bg-transparent'
+    }`}>
       <div className='flex justify-between items-center'>
         <div className='w-24 h-8 my-6 md:w-32 flex flex-row justify-center items-center gap-2'>
           <Image
@@ -41,7 +54,7 @@ export default function Navbar({ dark, darkFunc }) {
         <div className='w-full hidden md:flex flex-row justify-between items-center transition ease-in-out duration-300'>
           <div className='mx-auto '>
             {menu.map((item, index) => (
-              <a href={item.href} key={index} className={`px-4 lg:px-8 font-semibold dark:text-slate-300 hover:text-purple-700 dark:hover:text-white hover:transition-all hover:ease-in hover:duration-200 ${item.href === router.asPath ? 'active' : ''}`}>{item.name}</a>
+              <a href={item.href} key={index} className={`px-4 lg:px-8 font-semibold dark:text-slate-300 hover:text-teal-700 dark:hover:text-white hover:transition-all hover:ease-in hover:duration-200 ${item.href === router.asPath ? 'active' : ''}`}>{item.name}</a>
             ))}
           </div>
           {/* </div> */}
@@ -69,7 +82,7 @@ export default function Navbar({ dark, darkFunc }) {
         <div className='transition ease-in-out duration-300'>
           <div className='pt-4 pb-8 flex flex-col gap-4 justify-start items-start'>
             {menu.map((item, index) => (
-              <a href={item.href} key={index} className={`pt-2 lg:px-8 text-sm font-semibold dark:text-slate-300 hover:text-purple-700 dark:hover:text-white hover:transition-all hover:ease-in hover:duration-200 ${item.href === router.asPath ? 'active' : ''}`}>{item.name}</a>
+              <a href={item.href} key={index} className={`pt-2 lg:px-8 text-sm font-semibold dark:text-slate-300 hover:text-teal-700 dark:hover:text-white hover:transition-all hover:ease-in hover:duration-200 ${item.href === router.asPath ? 'active' : ''}`}>{item.name}</a>
             ))}
           </div>
           {/* <div className='py-4'>
