@@ -61,9 +61,9 @@ export default function Footer() {
                   <Image alt='ic-ig' className='object-contain' width={24} height={24} src='/icons/mail.svg' />
                   <span>fhidayat400@gmail.com</span>
                 </Link>
-                <Link className='flex justify-start items-center gap-1' href='https://wa.me/6283100553101' target='_blank'>
+                <Link className='flex justify-start items-center gap-1' href='https://wa.me/6283863011200' target='_blank'>
                   <Image alt='ic-ig' className='object-contain' width={24} height={24} src='/icons/wa.svg' />
-                  <span>(+62) 831-0055-3101</span>
+                  <span>(+62) 838-6301-1200</span>
                 </Link>
               </div>
             </div>
