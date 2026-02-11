@@ -49,7 +49,7 @@ export default function Navbar({ dark, darkFunc }) {
             width={24}
             height={24}
           />
-          <p className='dark:text-white text-[#29af77] drop-shadow-md font-poppins font-semibold tracking-wider text-lg md:text-xl'>SoonPro</p>
+          <p className='dark:text-white text-[#29af77] drop-shadow-md font-poppins font-semibold tracking-wider text-lg md:text-xl'></p>
         </div>
         <div className='w-full hidden md:flex flex-row justify-between items-center transition ease-in-out duration-300'>
           <div className='mx-auto '>
@@ -57,15 +57,6 @@ export default function Navbar({ dark, darkFunc }) {
               <a href={item.href} key={index} className={`px-4 lg:px-8 font-semibold dark:text-slate-300 hover:text-teal-700 dark:hover:text-white hover:transition-all hover:ease-in hover:duration-200 ${item.href === router.asPath ? 'active' : ''}`}>{item.name}</a>
             ))}
           </div>
-          {/* </div> */}
-          {/* <div className='flex items-center justify-between'> */}
-          {/* <button className='p-2 text-sm rounded-lg bg-gradient-to-tr from-[#34996b] to-[#118b6b] border-emerald-400 border-[1px] hover:bg-gradient-to-tr hover:from-[#45A38C] hover:to-[#4a917e] hover:scale-110 hover:transition-all hover:duration-200' onClick={darkFunc}>
-                        {dark ?
-                            (<Image src='/icons/sun.svg' width={20} height={20} alt='ic-sun' />)
-                            :
-                            (<Image src='/icons/moon.svg' width={20} height={20} alt='ic-moon' />)}
-                    </button> */}
-          {/* <ButtonIcon onClick={darkFunc} icon={dark ? sunIcon : moonIcon} /> */}
           <ButtonText title={'Chat me!'} />
         </div>
         <div className='md:hidden'>

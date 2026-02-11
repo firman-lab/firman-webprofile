@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <div className={isDark ? 'dark' : ''}>
         <Head>
-          <title>Firman | Web Developer</title>
+          <title>Dev Profile - Kodo Creative Studio</title>
           <meta name="description" content="Website Developer" />
         </Head>
         <main className='w-full relative dark:bg-slate-900 transition-all ease-in duration-300'>

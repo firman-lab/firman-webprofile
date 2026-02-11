@@ -11,6 +11,7 @@ export default function Portfolio() {
         <p className='text-sm lg:text-base xl:text-lg text-center max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl font-medium pt-2 text-gray-500 dark:text-gray-300 md:mb-8 mb-4 mx-auto font-poppins'>This is some of project that I have code for a few years. it&lsquo;s online and you can check it when you want.</p>
       </div>
       <div className='flex flex-wrap gap-8 justify-center items-center px-4 pt-8 lg:px-16 lg:pt-12'>
+        <CardPortfolio title={'ERP Website'} imgProject={'pf8.png'} link={'#'} desc={'Part of dev team build ERP Sistem PT. Giri Mas Indah'} label={'PT. Giri Mas Indah'}/>
         <CardPortfolio title={'Playfix'} imgProject={'pf7.png'} link={'https://playfix.co.id'} desc={'Bussiness Service Website'} label={'Playfix Indonesia'}/>
         <CardPortfolio title={'PCXFX by Primecodex LLC'} imgProject={'pf6.png'} link={'https://pcxfx.com'} desc={'Forex Market'} label={'Turnkey Inside'}/>
         <CardPortfolio title={'CMS Website'} imgProject={'pf5.png'} link={'#'} desc={'CMS for Website'} label={'iFixied Global ID'}/>

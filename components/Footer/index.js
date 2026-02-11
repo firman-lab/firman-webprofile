@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
       </div>
       <div className='mt-4 mx-8 pt-4 border-t border-purple-200/60 dark:border-slate-600/60 text-center text-xs font-light font-poppins text-white flex flex-row justify-center items-center '>
-        <p className='font-medium py-2 my-auto'>Copyright 2023 SoonPro.
+        <p className='font-medium py-2 my-auto'>© Copyright 2026 Kodo Creative Studio.
 
         </p>
         <span className='text-white'>&nbsp;All right reserved</span>

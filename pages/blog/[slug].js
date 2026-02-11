@@ -46,7 +46,7 @@ export default function Blog({ post: { source, frontmatter } }) {
         <Head>
           <title>{frontmatter.title}</title>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          {/* <meta property="og:url" content={`https://soonpro.my.id/blog/${frontMatter.slug}`} />
+          {/* <meta property="og:url" content={`https://firmanhd.vercel.app/blog/${frontMatter.slug}`} />
                     <meta property="og:title" content={frontmatter.title} />
                     <meta property="og:description" content={frontmatter.title} /> */}
         </Head>

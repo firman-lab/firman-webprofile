@@ -23,7 +23,10 @@ export default function Header() {
                 options={{
                   strings: [
                     'Front End Developer',
+                    'React.Js Developer',
                     'Next.Js Developer',
+                    'Laravel Developer',
+                    'Front End Engineer',
                     'UI/UX Designer',
                   ],
                   autoStart: true,
@@ -33,11 +36,15 @@ export default function Header() {
               />
             </h3>
             <p className="font-medium text-slate-600 dark:text-gray-300 text-sm lg:max-w-2xl text-justify lg:text-base xl:text-lg pt-2 lg:pt-4 font-poppins">
-              I&apos;ve experience website development with React Js, expecially
-              with Next Js Framework, Express Js for Backend, and Sql or NoSql
-              Database. I&apos;m willing to collaborate with you, if you need
-              someone to help your website better, let&apos;s talk over the
-              chat!
+              Passionate about crafting{' '}
+              <span className="text-emerald-600 dark:text-emerald-400 font-semibold">high-performance</span>{' '}
+              and{' '}
+              <span className="text-emerald-600 dark:text-emerald-400 font-semibold">pixel-perfect</span>{' '}
+              web experiences. Specialized in{' '}
+              <span className="font-semibold">React.js</span> &amp;{' '}
+              <span className="font-semibold">Next.js</span> with strong backend skills in Express.js and database management.
+              I turn ideas into clean, scalable, and user-friendly digital products.{' '}
+              <span className="text-emerald-600 dark:text-emerald-400 font-semibold">Let&apos;s build something amazing together!</span>
             </p>
             <div className="flex flex-wrap justify-between md:justify-left gap-4 lg:gap-8 items-center mt-8 max-w-sm">
               <a
